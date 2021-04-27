@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        if (puntaje >= 2)
+        if (puntaje >= 12)
         {
             SceneManager.LoadScene("PlatformScene");
         }

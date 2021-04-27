@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
     public int life = 5;
     public bool enemy;
-    public bool puntaje;
+    public bool player;
+
 
 
     public void TakeDamage(int damage)
@@ -16,9 +18,14 @@ public class Health : MonoBehaviour
         {
             Destroy(gameObject);
 
-            if (enemy && puntaje)
+            if (enemy)
             {
 
+            }
+
+            if (player)
+            {
+                SceneManager.LoadScene("PlatformScene");
             }
 
         }
