@@ -28,7 +28,7 @@ public class SpawnEnemyIsaac : MonoBehaviour
     void Arriba()
     {
         float x = Random.Range(-10f, 10f);
-        float y = 25f;
+        float y = 20f;
         Vector3 position = new Vector3(x, y, 0);
         Quaternion rotation = new Quaternion();
         Instantiate(enemyPrefabDown, position, rotation);
@@ -37,7 +37,7 @@ public class SpawnEnemyIsaac : MonoBehaviour
     void Abajo()
     {
         float x = Random.Range(-10f, 10f);
-        float y = -25f;
+        float y = -20f;
         Vector3 position = new Vector3(x, y, 0);
         Quaternion rotation = new Quaternion();
         Instantiate(enemyPrefabUp, position, rotation);
@@ -47,7 +47,7 @@ public class SpawnEnemyIsaac : MonoBehaviour
     void Izq()
     {
         float x = -25f;
-        float y = Random.Range(-10f, 10f);
+        float y = Random.Range(-5f, 5f);
         Vector3 position = new Vector3(x, y, 0);
         Quaternion rotation = new Quaternion();
         Instantiate(enemyPrefabDer, position, rotation);
@@ -57,7 +57,7 @@ public class SpawnEnemyIsaac : MonoBehaviour
     void Der()
     {
         float x = 25f;
-        float y = Random.Range(-10f, 10f);
+        float y = Random.Range(-5f, 5f);
         Vector3 position = new Vector3(x, y, 0);
         Quaternion rotation = new Quaternion();
         Instantiate(enemyPrefabIzqu, position, rotation);
@@ -68,13 +68,13 @@ public class SpawnEnemyIsaac : MonoBehaviour
         while (true)
         {
             Arriba();
-            yield return new WaitForSeconds(1);
-            Abajo();
             yield return new WaitForSeconds(2);
+            Abajo();
+            yield return new WaitForSeconds(1f);
             Der();
-            yield return new WaitForSeconds(.5f);
+            yield return new WaitForSeconds(1f);
             Izq();
-            yield return new WaitForSeconds(1);
+            yield return new WaitForSeconds(2);
         }
         //yield break;
     }
