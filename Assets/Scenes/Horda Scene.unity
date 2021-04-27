@@ -847,6 +847,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1041679890}
   - component: {fileID: 1041679891}
+  - component: {fileID: 1041679892}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -884,6 +885,18 @@ MonoBehaviour:
   enemyPrefabDown: {fileID: 2608699187115664100, guid: f66c3d0ca307c844db270e467eee8398, type: 3}
   enemyPrefabDer: {fileID: 2608699187115664100, guid: 3bfcdda12e9d590418c848ea38883c72, type: 3}
   enemyPrefabIzqu: {fileID: 2608699187115664100, guid: ea040b67d3f28e84d92b83d06c4616d2, type: 3}
+--- !u!114 &1041679892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1041679889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd0fe310a998b9f45b3f8b7f9eabde43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1114424391
 GameObject:
   m_ObjectHideFlags: 3

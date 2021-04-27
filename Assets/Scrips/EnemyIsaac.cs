@@ -39,6 +39,7 @@ public class EnemyIsaac : MonoBehaviour
     {
         if (other.CompareTag("Bullet"))
         {
+            GameManager.puntaje++;
             Destroy(gameObject);
         }
     }

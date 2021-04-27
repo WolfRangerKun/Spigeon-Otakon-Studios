@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4344839042189025216}
   - component: {fileID: 54226977219859628}
   - component: {fileID: 843054318844193049}
+  - component: {fileID: 2965163350394596149}
   m_Layer: 0
   m_Name: EnemyIsaacDown
   m_TagString: Untagged
@@ -140,3 +141,18 @@ MonoBehaviour:
   isDown: 1
   isDer: 0
   isIzqu: 0
+--- !u!114 &2965163350394596149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2608699187115664100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d519fb913232754f898e0c06bb5cc27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  life: 1
+  enemy: 1
+  puntaje: 0

@@ -6,6 +6,7 @@ public class Health : MonoBehaviour
 {
     public int life = 5;
     public bool enemy;
+    public bool puntaje;
 
 
     public void TakeDamage(int damage)
@@ -15,7 +16,7 @@ public class Health : MonoBehaviour
         {
             Destroy(gameObject);
 
-            if (enemy)
+            if (enemy && puntaje)
             {
 
             }
