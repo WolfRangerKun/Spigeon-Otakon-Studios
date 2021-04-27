@@ -2117,7 +2117,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   life: 10
   enemy: 0
-  player: 0
+  player: 1
 --- !u!1 &730954739
 GameObject:
   m_ObjectHideFlags: 0
