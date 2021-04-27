@@ -856,7 +856,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d519fb913232754f898e0c06bb5cc27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 5
+  life: 3
   enemy: 1
 --- !u!1 &278156865
 GameObject:
@@ -1264,7 +1264,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d519fb913232754f898e0c06bb5cc27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 5
+  life: 3
   enemy: 1
 --- !u!1 &400382390
 GameObject:
@@ -1972,7 +1972,8 @@ MonoBehaviour:
   firePoint: {fileID: 42815417}
   bulletPrefab: {fileID: -5994305944300957018, guid: 824cea94342a516428a9bf368be9005d, type: 3}
   bulletSpeed: 50
-  ammo: 1
+  ammo: 8
+  canFire: 1
 --- !u!114 &646192019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2977,7 +2978,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d519fb913232754f898e0c06bb5cc27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 5
+  life: 3
   enemy: 1
 --- !u!1 &1191561661
 GameObject:
@@ -3210,7 +3211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d519fb913232754f898e0c06bb5cc27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 5
+  life: 3
   enemy: 1
 --- !u!1 &1332301598
 GameObject:
@@ -4160,7 +4161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d519fb913232754f898e0c06bb5cc27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 5
+  life: 3
   enemy: 1
 --- !u!1 &1756567375
 GameObject:
