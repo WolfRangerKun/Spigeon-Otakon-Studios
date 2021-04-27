@@ -1,0 +1,1344 @@
+fileFormatVersion: 2
+guid: 749e658a0d57ad74db9ac38f5dcadce5
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4364910193611557963
+    second: Running Tape_0
+  - first:
+      213: -4483835764924544068
+    second: Running Tape_1
+  - first:
+      213: -1576558694872157971
+    second: Running Tape_2
+  - first:
+      213: -5633256701877697587
+    second: Running Tape_3
+  - first:
+      213: -2825598685901815537
+    second: Running Tape_4
+  - first:
+      213: 2983055204473077201
+    second: Running Tape_5
+  - first:
+      213: 7488764019506075510
+    second: Running Tape_6
+  - first:
+      213: -2805111747418393617
+    second: Running Tape_7
+  - first:
+      213: 4894836483125781196
+    second: Running Tape_8
+  - first:
+      213: 7158661977411391273
+    second: Running Tape_9
+  - first:
+      213: -3807027897055597369
+    second: Running Tape_10
+  - first:
+      213: -1875997764547059290
+    second: Running Tape_11
+  - first:
+      213: 1168342526149190596
+    second: Running Tape_12
+  - first:
+      213: -6674390239518864492
+    second: Running Tape_13
+  - first:
+      213: -3959405897106917931
+    second: Running Tape_14
+  - first:
+      213: -872078558128353892
+    second: Running Tape_15
+  - first:
+      213: 450181164053995222
+    second: Running Tape_16
+  - first:
+      213: 137851004642961561
+    second: Running Tape_17
+  - first:
+      213: 3905349479563680327
+    second: Running Tape_18
+  - first:
+      213: -4995195020392040008
+    second: Running Tape_19
+  - first:
+      213: 5988798785541709433
+    second: Running Tape_20
+  - first:
+      213: -2914184847285348149
+    second: Running Tape_21
+  - first:
+      213: 4732141235869611465
+    second: Running Tape_22
+  - first:
+      213: -4137178469241107271
+    second: Running Tape_23
+  - first:
+      213: 8865386315184028897
+    second: Running Tape_24
+  - first:
+      213: -8010723977837192466
+    second: Running Tape_25
+  - first:
+      213: 8936662879387228541
+    second: Running Tape_26
+  - first:
+      213: 1649830862558908883
+    second: Running Tape_27
+  - first:
+      213: 5498085939680460981
+    second: Running Tape_28
+  - first:
+      213: 381740583034381208
+    second: Running Tape_29
+  - first:
+      213: -1660322529352868851
+    second: Running Tape_30
+  - first:
+      213: -8388695294741116633
+    second: Running Tape_31
+  - first:
+      213: -5525715790509974560
+    second: Running Tape_32
+  - first:
+      213: -5517579060646679329
+    second: Running Tape_33
+  - first:
+      213: -8640373711592813496
+    second: Running Tape_34
+  - first:
+      213: 3799481440895062043
+    second: Running Tape_35
+  - first:
+      213: -1460853985478084568
+    second: Running Tape_36
+  - first:
+      213: -8130951987639926124
+    second: Running Tape_37
+  - first:
+      213: 7917052938320869197
+    second: Running Tape_38
+  - first:
+      213: 4186863073753607758
+    second: Running Tape_39
+  - first:
+      213: 7130530486434170915
+    second: Running Tape_40
+  - first:
+      213: 5149742463210841056
+    second: Running Tape_41
+  - first:
+      213: -6157153005871110271
+    second: Running Tape_42
+  - first:
+      213: 21648914954748254
+    second: Running Tape_43
+  - first:
+      213: -6617267335721476311
+    second: Running Tape_44
+  - first:
+      213: 7121024742128098717
+    second: Running Tape_45
+  - first:
+      213: -8999688930520699942
+    second: Running Tape_46
+  - first:
+      213: 5749028653722535240
+    second: Running Tape_47
+  - first:
+      213: 8382681943175015699
+    second: Running Tape_48
+  - first:
+      213: 1245086883100238032
+    second: Running Tape_49
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Running Tape_0
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 2112
+        width: 196
+        height: 266
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4cc2bed1b6439c30800000000000000
+      internalID: 4364910193611557963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Tape_1
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 2109
+        width: 193
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbb0b70d02736c1c0800000000000000
+      internalID: -4483835764924544068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Tape_2
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 2106
+        width: 191
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de077905830fe1ae0800000000000000
+      internalID: -1576558694872157971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Tape_3
+      rect:
+        serializedVersion: 2
+        x: 1642
+        y: 2106
+        width: 188
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc3cdfb30e6a2d1b0800000000000000
+      internalID: -5633256701877697587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Tape_4
+      rect:
+        serializedVersion: 2
+        x: 2143
+        y: 2103
+        width: 185
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f01030147f479c8d0800000000000000
+      internalID: -2825598685901815537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Tape_5
+      rect:
+        serializedVersion: 2
+        x: 2647
+        y: 2103
+        width: 181
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dd7fff47e0f56920800000000000000
+      internalID: 2983055204473077201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Tape_6
+      rect:
+        serializedVersion: 2
+        x: 3148
+        y: 2103
+        width: 179
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 677d265d23f6de760800000000000000
+      internalID: 7488764019506075510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Tape_7
+      rect:
+        serializedVersion: 2
+        x: 3649
+        y: 2103
+        width: 178
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe3f9d35abd3219d0800000000000000
+      internalID: -2805111747418393617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Tape_8
+      rect:
+        serializedVersion: 2
+        x: 4153
+        y: 2103
+        width: 173
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc2a552f8d3fde340800000000000000
+      internalID: 4894836483125781196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Tape_9
+      rect:
+        serializedVersion: 2
+        x: 4654
+        y: 2103
+        width: 170
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92f83b6e32da85360800000000000000
+      internalID: 7158661977411391273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Tape_10
+      rect:
+        serializedVersion: 2
+        x: 5155
+        y: 2103
+        width: 169
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ccaff15c48ba2bc0800000000000000
+      internalID: -3807027897055597369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Tape_11
+      rect:
+        serializedVersion: 2
+        x: 5659
+        y: 2103
+        width: 164
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a1eebcf8fd17f5e0800000000000000
+      internalID: -1875997764547059290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Tape_12
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1605
+        width: 161
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c3ea1f5659c63010800000000000000
+      internalID: 1168342526149190596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Tape_13
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 1605
+        width: 158
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49bc429807dcf53a0800000000000000
+      internalID: -6674390239518864492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Tape_14
+      rect:
+        serializedVersion: 2
+        x: 1163
+        y: 1605
+        width: 157
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d5fa5d705d5d09c0800000000000000
+      internalID: -3959405897106917931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Tape_15
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 1605
+        width: 152
+        height: 272
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9d468efb21c5e3f0800000000000000
+      internalID: -872078558128353892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Tape_16
+      rect:
+        serializedVersion: 2
+        x: 2167
+        y: 1602
+        width: 152
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6de9200326d5f3600800000000000000
+      internalID: 450181164053995222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Tape_17
+      rect:
+        serializedVersion: 2
+        x: 2670
+        y: 1602
+        width: 153
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 998aca322ceb9e100800000000000000
+      internalID: 137851004642961561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Tape_18
+      rect:
+        serializedVersion: 2
+        x: 3171
+        y: 1599
+        width: 155
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74a562509a6923630800000000000000
+      internalID: 3905349479563680327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Tape_19
+      rect:
+        serializedVersion: 2
+        x: 3672
+        y: 1599
+        width: 156
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b97bb938908daab0800000000000000
+      internalID: -4995195020392040008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Tape_20
+      rect:
+        serializedVersion: 2
+        x: 4168
+        y: 1599
+        width: 164
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97e1183f3cc7c1350800000000000000
+      internalID: 5988798785541709433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Tape_21
+      rect:
+        serializedVersion: 2
+        x: 4663
+        y: 1599
+        width: 172
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc81bb7425cbe87d0800000000000000
+      internalID: -2914184847285348149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Tape_22
+      rect:
+        serializedVersion: 2
+        x: 5161
+        y: 1597
+        width: 177
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c57cfec161fba140800000000000000
+      internalID: 4732141235869611465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Tape_23
+      rect:
+        serializedVersion: 2
+        x: 5656
+        y: 1596
+        width: 184
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bc4d781a1ac596c0800000000000000
+      internalID: -4137178469241107271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Tape_24
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 1098
+        width: 193
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ec372102ed280b70800000000000000
+      internalID: 8865386315184028897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Tape_25
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 1098
+        width: 196
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eea5f4b1cf034d090800000000000000
+      internalID: -8010723977837192466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Tape_26
+      rect:
+        serializedVersion: 2
+        x: 1153
+        y: 1098
+        width: 190
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d799b435a87650c70800000000000000
+      internalID: 8936662879387228541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Tape_27
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 1098
+        width: 184
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d1dc46ad6065e610800000000000000
+      internalID: 1649830862558908883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Tape_28
+      rect:
+        serializedVersion: 2
+        x: 2161
+        y: 1098
+        width: 175
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b0493338002d4c40800000000000000
+      internalID: 5498085939680460981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Tape_29
+      rect:
+        serializedVersion: 2
+        x: 2665
+        y: 1098
+        width: 169
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8936d18a9073c4500800000000000000
+      internalID: 381740583034381208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Tape_30
+      rect:
+        serializedVersion: 2
+        x: 3168
+        y: 1098
+        width: 164
+        height: 281
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0c1851d47955f8e0800000000000000
+      internalID: -1660322529352868851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Tape_31
+      rect:
+        serializedVersion: 2
+        x: 3672
+        y: 1099
+        width: 156
+        height: 280
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72907fb131e559b80800000000000000
+      internalID: -8388695294741116633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Tape_32
+      rect:
+        serializedVersion: 2
+        x: 4170
+        y: 1101
+        width: 156
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ebd2e8d3c6b053b0800000000000000
+      internalID: -5525715790509974560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Tape_33
+      rect:
+        serializedVersion: 2
+        x: 4669
+        y: 1101
+        width: 152
+        height: 278
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdc6506e31f9d63b0800000000000000
+      internalID: -5517579060646679329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Tape_34
+      rect:
+        serializedVersion: 2
+        x: 5167
+        y: 1103
+        width: 152
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84c03e153e9371880800000000000000
+      internalID: -8640373711592813496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Tape_35
+      rect:
+        serializedVersion: 2
+        x: 5665
+        y: 1104
+        width: 155
+        height: 275
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b105d3f6d387ab430800000000000000
+      internalID: 3799481440895062043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Tape_36
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 605
+        width: 157
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8287dd64a010abbe0800000000000000
+      internalID: -1460853985478084568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Tape_37
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 604
+        width: 160
+        height: 274
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49247f23f3e092f80800000000000000
+      internalID: -8130951987639926124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Tape_38
+      rect:
+        serializedVersion: 2
+        x: 1159
+        y: 602
+        width: 164
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d47f39873b50fdd60800000000000000
+      internalID: 7917052938320869197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Tape_39
+      rect:
+        serializedVersion: 2
+        x: 1657
+        y: 602
+        width: 167
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4ea84a58c9ba1a30800000000000000
+      internalID: 4186863073753607758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Tape_40
+      rect:
+        serializedVersion: 2
+        x: 2155
+        y: 602
+        width: 170
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3288000c2bbb4f260800000000000000
+      internalID: 7130530486434170915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Tape_41
+      rect:
+        serializedVersion: 2
+        x: 2653
+        y: 602
+        width: 173
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e36d6c5c7f877740800000000000000
+      internalID: 5149742463210841056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Tape_42
+      rect:
+        serializedVersion: 2
+        x: 3151
+        y: 602
+        width: 176
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 187e25196f56d8aa0800000000000000
+      internalID: -6157153005871110271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Tape_43
+      rect:
+        serializedVersion: 2
+        x: 3649
+        y: 602
+        width: 179
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5186adc299ec4000800000000000000
+      internalID: 21648914954748254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Tape_44
+      rect:
+        serializedVersion: 2
+        x: 4147
+        y: 602
+        width: 181
+        height: 276
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92f968efa6eba24a0800000000000000
+      internalID: -6617267335721476311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Tape_45
+      rect:
+        serializedVersion: 2
+        x: 4645
+        y: 605
+        width: 184
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9d105f2646f2d260800000000000000
+      internalID: 7121024742128098717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Tape_46
+      rect:
+        serializedVersion: 2
+        x: 5143
+        y: 605
+        width: 187
+        height: 273
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adb6c4f999eaa1380800000000000000
+      internalID: -8999688930520699942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Tape_47
+      rect:
+        serializedVersion: 2
+        x: 5641
+        y: 607
+        width: 190
+        height: 271
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8458ca4d917a8cf40800000000000000
+      internalID: 5749028653722535240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Tape_48
+      rect:
+        serializedVersion: 2
+        x: 139
+        y: 109
+        width: 194
+        height: 268
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31d270060d4455470800000000000000
+      internalID: 8382681943175015699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Running Tape_49
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 110
+        width: 199
+        height: 267
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d020b56cef674110800000000000000
+      internalID: 1245086883100238032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

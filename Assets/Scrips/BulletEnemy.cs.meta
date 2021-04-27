@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Scrips/BulletEnemy.cs.meta
+guid: 8227f050cc54e104898f690161a1c149
+=======
+guid: dd637356403e60e40b8d857b852aad49
+>>>>>>> b3b0d3f21c6b1df68ef06b001a7f5df5a598e8d7:Assets/Scrips/EnemyIsaac.cs.meta
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
