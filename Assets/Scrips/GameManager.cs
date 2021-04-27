@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
         if (puntaje >= 12)
         {
             SceneManager.LoadScene("PlatformScene");
+            puntaje = 0;
         }
     }
 }
