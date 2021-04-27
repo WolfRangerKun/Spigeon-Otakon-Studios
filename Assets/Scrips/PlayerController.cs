@@ -46,8 +46,26 @@ public class PlayerController : MonoBehaviour
         {
             verticalMove = joystick.Vertical * speed;
             horizontalMove = joystick.Horizontal * speed;
-
+            
             transform.position += new Vector3(horizontalMove, verticalMove, 0) * Time.deltaTime;
+
+            if(horizontalMove > 0)
+            {
+                gameObject.GetComponent<SpriteRenderer>().flipX = true;
+            }
+            else if(horizontalMove < 0)
+            {
+                gameObject.GetComponent<SpriteRenderer>().flipX = false;
+            }
+
+            if (verticalMove != 0 && horizontalMove != 0)
+            {
+                gameObject.GetComponent<Animator>().SetBool("isRunning", true);
+            }
+            else
+            {
+                gameObject.GetComponent<Animator>().SetBool("isRunning", false);
+            }
         }
     }
 

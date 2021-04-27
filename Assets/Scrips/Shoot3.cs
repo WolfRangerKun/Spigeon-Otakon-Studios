@@ -27,7 +27,7 @@ public class Shoot3 : MonoBehaviour
     void Update()
     {
         Aim();
-        if (joystick.Vertical !=0 && joystick.Horizontal != 0)
+        if (joystick.Vertical !=0 && joystick.Horizontal != 0 && Input.GetButtonDown("Fire1"))
         {
             Shoot();
         }
