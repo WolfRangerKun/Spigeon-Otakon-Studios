@@ -6,24 +6,28 @@ public class SpawnEnemyIsaac : MonoBehaviour
 {
     float timer;
     public GameObject enemyPrefabUp, enemyPrefabDown, enemyPrefabDer, enemyPrefabIzqu;
-   
-    void Update()
+
+    private void Start()
     {
-        timer += Time.deltaTime;
-        //Abajo
-        if (timer >= 2 /*&& timer < 1.1f*/)
-        {
-            timer = 0;
-            Arriba();
-            Abajo();
-            Izq();
-            Der();
-        }
+        StartCoroutine(Timer());
     }
+    //void Update()
+    //{
+    //timer += Time.deltaTime;
+    //    //Abajo
+    //    if (timer >= 2 /*&& timer < 1.1f*/)
+    //    {
+    //        timer = 0;
+    //        Arriba();
+    //        Abajo();
+    //        Izq();
+    //        Der();
+    //    }
+    //}
 
     void Arriba()
     {
-        float x = Random.Range(-25f, 25f);
+        float x = Random.Range(-10f, 10f);
         float y = 25f;
         Vector3 position = new Vector3(x, y, 0);
         Quaternion rotation = new Quaternion();
@@ -32,7 +36,7 @@ public class SpawnEnemyIsaac : MonoBehaviour
 
     void Abajo()
     {
-        float x = Random.Range(-25f, 25f);
+        float x = Random.Range(-10f, 10f);
         float y = -25f;
         Vector3 position = new Vector3(x, y, 0);
         Quaternion rotation = new Quaternion();
@@ -43,7 +47,7 @@ public class SpawnEnemyIsaac : MonoBehaviour
     void Izq()
     {
         float x = -25f;
-        float y = Random.Range(-25f, 25f);
+        float y = Random.Range(-10f, 10f);
         Vector3 position = new Vector3(x, y, 0);
         Quaternion rotation = new Quaternion();
         Instantiate(enemyPrefabDer, position, rotation);
@@ -53,10 +57,26 @@ public class SpawnEnemyIsaac : MonoBehaviour
     void Der()
     {
         float x = 25f;
-        float y = Random.Range(-25f, 25f);
+        float y = Random.Range(-10f, 10f);
         Vector3 position = new Vector3(x, y, 0);
         Quaternion rotation = new Quaternion();
         Instantiate(enemyPrefabIzqu, position, rotation);
+    }
+
+    IEnumerator Timer()
+    {
+        while (true)
+        {
+            Arriba();
+            yield return new WaitForSeconds(1);
+            Abajo();
+            yield return new WaitForSeconds(2);
+            Der();
+            yield return new WaitForSeconds(.5f);
+            Izq();
+            yield return new WaitForSeconds(1);
+        }
+        //yield break;
     }
 }
 
