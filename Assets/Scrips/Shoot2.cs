@@ -18,7 +18,9 @@ public class Shoot2 : MonoBehaviour
 
     public float bulletSpeed = 100f;
 
-    public int ammo = 1;
+    public int ammo = 8;
+
+    public bool canFire = true;
 
     // Start is called before the first frame update
     void Start()
@@ -30,9 +32,29 @@ public class Shoot2 : MonoBehaviour
     void Update()
     {
         Aim();
-        if (joystick.Vertical != 0  && joystick.Horizontal != 0 && Input.GetButtonDown("Fire1"))
+        if (joystick.Vertical != 0 && joystick.Horizontal != 0 && canFire)
         {
+            canFire = false;
+            StartCoroutine(TimingShoot()); // consejo de walter (que cuando dejes de disparar , recargars, tipo que se va subiendo 1 por 1 las balas).
             Shoot();
+            if (ammo == 0)
+            {
+                StartCoroutine(Recharge());
+                if (ammo == 8)
+                {
+                    StopCoroutine(Recharge());
+                }
+            }
+
+
+        }
+        if (ammo == 0)
+        {
+            canFire = false;
+        }
+        else if (ammo == 8)
+        {
+            canFire = true;
         }
         //Shoot();
     }
@@ -72,7 +94,28 @@ public class Shoot2 : MonoBehaviour
 
     public void Shoot()
     {
-        var bulletFired = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
-        bulletFired.AddForce(firePoint.up * bulletSpeed);
+        if (ammo >= 1)
+        {
+            var bulletFired = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+            bulletFired.AddForce(firePoint.up * bulletSpeed);
+            ammo--;
+        }
+
+    }
+
+    IEnumerator TimingShoot()
+    {
+        yield return new WaitForSeconds(0.3f);
+        canFire = true;
+        yield break;
+    }
+
+    IEnumerator Recharge()
+    {
+        while (ammo < 8)
+        {
+            yield return new WaitForSeconds(1f);
+            ammo++;
+        }
     }
 }
