@@ -859,6 +859,7 @@ MonoBehaviour:
   life: 3
   enemy: 1
   player: 0
+  materiasPlataforms: {fileID: 3079496634496970693, guid: c6b775e3faf5ddd48bb7d04fbea315de, type: 3}
 --- !u!1 &278156865
 GameObject:
   m_ObjectHideFlags: 0
@@ -1268,6 +1269,7 @@ MonoBehaviour:
   life: 3
   enemy: 1
   player: 0
+  materiasPlataforms: {fileID: 3079496634496970693, guid: c6b775e3faf5ddd48bb7d04fbea315de, type: 3}
 --- !u!1 &400382390
 GameObject:
   m_ObjectHideFlags: 0
@@ -2082,6 +2084,7 @@ MonoBehaviour:
   jumpStreng: 10
   groundCheck: {fileID: 2120010979}
   distanceFromTheFloor: 0.1
+  materialPlatforms: 100
 --- !u!114 &646192018
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2118,6 +2121,7 @@ MonoBehaviour:
   life: 10
   enemy: 0
   player: 1
+  materiasPlataforms: {fileID: 3079496634496970693, guid: c6b775e3faf5ddd48bb7d04fbea315de, type: 3}
 --- !u!1 &730954739
 GameObject:
   m_ObjectHideFlags: 0
@@ -3111,6 +3115,7 @@ MonoBehaviour:
   life: 3
   enemy: 1
   player: 0
+  materiasPlataforms: {fileID: 3079496634496970693, guid: c6b775e3faf5ddd48bb7d04fbea315de, type: 3}
 --- !u!1 &1191561661
 GameObject:
   m_ObjectHideFlags: 0
@@ -3345,6 +3350,7 @@ MonoBehaviour:
   life: 3
   enemy: 1
   player: 0
+  materiasPlataforms: {fileID: 3079496634496970693, guid: c6b775e3faf5ddd48bb7d04fbea315de, type: 3}
 --- !u!1 &1332301598
 GameObject:
   m_ObjectHideFlags: 0
@@ -4296,6 +4302,7 @@ MonoBehaviour:
   life: 3
   enemy: 1
   player: 0
+  materiasPlataforms: {fileID: 3079496634496970693, guid: c6b775e3faf5ddd48bb7d04fbea315de, type: 3}
 --- !u!1 &1756567375
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,9 +8,7 @@ public class Health : MonoBehaviour
     public int life = 5;
     public bool enemy;
     public bool player;
-
-
-
+    public GameObject materiasPlataforms;
     public void TakeDamage(int damage)
     {
         life -= damage;
@@ -20,7 +18,7 @@ public class Health : MonoBehaviour
 
             if (enemy)
             {
-
+                Instantiate(materiasPlataforms, transform.position, materiasPlataforms.transform.rotation);
             }
 
             if (player)

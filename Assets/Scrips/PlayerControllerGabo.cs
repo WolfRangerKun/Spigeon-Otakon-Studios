@@ -12,6 +12,7 @@ public class PlayerControllerGabo : MonoBehaviour
     public Transform groundCheck;
     public float distanceFromTheFloor = .1f;
     Rigidbody2D rb2D;
+    public int materialPlatforms = 100;
 
     private void Start()
     {
@@ -43,7 +44,11 @@ public class PlayerControllerGabo : MonoBehaviour
 
     public void SpawnPlatform()
     {
-        Instantiate(platform, spawn.position, Quaternion.identity);
+        if(materialPlatforms >= 10)
+        {
+            Instantiate(platform, spawn.position, Quaternion.identity);
+            materialPlatforms -= 10;
+        }
     }
 
     public void Jump()
