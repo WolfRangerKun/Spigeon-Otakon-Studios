@@ -67,6 +67,7 @@ public class PlayerController : MonoBehaviour
                 gameObject.GetComponent<Animator>().SetBool("isRunning", false);
             }
         }
+
     }
 
     private void FixedUpdate()

@@ -45,8 +45,6 @@ public class Shoot2 : MonoBehaviour
                     StopCoroutine(Recharge());
                 }
             }
-
-
         }
         if (ammo == 0)
         {
