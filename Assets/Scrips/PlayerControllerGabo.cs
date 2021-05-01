@@ -37,7 +37,6 @@ public class PlayerControllerGabo : MonoBehaviour
         if (Detection.isGrounded == true)
         {
             PlayerController player = GetComponent<PlayerController>();
-
             Jump();
         }
     }
