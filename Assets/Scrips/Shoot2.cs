@@ -22,6 +22,11 @@ public class Shoot2 : MonoBehaviour
 
     public bool canFire = true;
 
+
+    //Pausa
+    public GameManager gameManager;
+    //Pausa
+
     // Start is called before the first frame update
     void Start()
     {
@@ -31,34 +36,39 @@ public class Shoot2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Aim();
-        if (joystick.Vertical != 0 && joystick.Horizontal != 0 && canFire)
+        if (gameManager.IsGameRunning())
         {
-            canFire = false;
-            StartCoroutine(TimingShoot()); // consejo de walter (que cuando dejes de disparar , recargars, tipo que se va subiendo 1 por 1 las balas).
-            Shoot();
-            if (ammo == 0)
+            Aim();
+            if (joystick.Vertical != 0 && joystick.Horizontal != 0 && canFire)
             {
-                StartCoroutine(Recharge());
-                if (ammo == 8)
+                canFire = false;
+                StartCoroutine(TimingShoot()); // consejo de walter (que cuando dejes de disparar , recargars, tipo que se va subiendo 1 por 1 las balas).
+                Shoot();
+                if (ammo == 0)
                 {
-                    StopCoroutine(Recharge());
+                    StartCoroutine(Recharge());
+                    if (ammo == 8)
+                    {
+                        StopCoroutine(Recharge());
+                    }
                 }
             }
+            if (ammo == 0)
+            {
+                canFire = false;
+            }
+            else if (ammo == 8)
+            {
+                canFire = true;
+            }
+            //Shoot();
         }
-        if (ammo == 0)
-        {
-            canFire = false;
-        }
-        else if (ammo == 8)
-        {
-            canFire = true;
-        }
-        //Shoot();
+
     }
 
     public void Aim()
     {
+        
         Vector3 angle = twistPoint.transform.localEulerAngles;
 
         //float HorizontalAxis = Input.GetAxis("HorizontalRightStick");

@@ -15,4 +15,38 @@ public class GameManager : MonoBehaviour
             puntaje = 0;
         }
     }
+
+    [SerializeField]
+    private bool gameRunning;
+
+    public void ChangedGameRunningState()
+    {
+        gameRunning = !gameRunning;
+
+        if (gameRunning)
+        {
+            Time.timeScale = 1f;
+
+            AudioSource[] audios = FindObjectsOfType<AudioSource>();
+            foreach (AudioSource a in audios)
+            {
+                a.Play();
+            }
+        }
+        else
+        {
+            Time.timeScale = 0f;
+
+            AudioSource[] audios = FindObjectsOfType<AudioSource>();
+            foreach (AudioSource a in audios)
+            {
+                a.Pause();
+            }
+        }
+    }
+
+    public bool IsGameRunning()
+    {
+        return gameRunning;
+    }
 }

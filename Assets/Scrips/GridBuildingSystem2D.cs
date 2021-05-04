@@ -6,18 +6,29 @@ using CodeMonkey.Utils;
 
 public class GridBuildingSystem2D : MonoBehaviour
 {
+    //Pausa
+    private GameManager gameManager;
+    //Pausa
+
+
     [SerializeField] private Transform platTranform;
+
 
     private Grid<GridObject> grid;
 
     private void Awake()
     {
 
-        int gridWidth = 10;
-        int gridHeight = 10;
-        float cellSize = 10f;
+        int gridWidth = 20;
+        int gridHeight = 20;
+        float cellSize = 5f;
         grid = new Grid<GridObject>(gridWidth, gridHeight, cellSize, new Vector3(0, 0, 0), (Grid<GridObject> g, int x, int y) => new GridObject(g, x, y));
 
+    }
+    private void Start()
+    {
+        gameManager = FindObjectOfType<GameManager>();
+        SetVacio();
     }
 
     public class GridObject
@@ -57,51 +68,58 @@ public class GridBuildingSystem2D : MonoBehaviour
 
     }
 
-    public GameObject player;
-    //private void Update()
-    //{
-    //    if (Input.GetMouseButtonDown(0))
-    //    {
-    //        Vector3 mousePosition = /*UtilsClass.GetMouseWorldPosition()*/ PlayerPositionWorld();
-
-    //        grid.GetXY(mousePosition, out int x, out int y);
-
-    //        GridObject gridObject = grid.GetGridObject(x, y);
-    //        if (gridObject.CanBuild())
-    //        {
-    //            Transform builtTransform = Instantiate(platTranform, grid.GetWorldPosition(x * 1, y *1), Quaternion.identity);
-    //            gridObject.SetTransform(builtTransform);
-    //        }
-    //        else
-    //        {
-    //            UtilsClass.CreateWorldTextPopup("No Puede Poner Plataforma", mousePosition);
-    //        }
-            
-    //    }
-    //}
+    public GameObject playerSpawner;
 
 
     public void SetPlatformInSpace()
     {
-        Vector3 mousePosition = PlayerPositionWorld();
+        if (gameManager.IsGameRunning())
+        {
+            Vector3 mousePosition = PlayerPositionWorld();
 
-        grid.GetXY(mousePosition, out int x, out int y);
+            grid.GetXY(mousePosition, out int x, out int y);
+
+            GridObject gridObject = grid.GetGridObject(x, y);
+            if (gridObject.CanBuild())
+            {
+                Transform builtTransform = Instantiate(platTranform, grid.GetWorldPosition(x * 1, y * 1), Quaternion.identity);
+                gridObject.SetTransform(builtTransform);
+            }
+            else
+            {
+                UtilsClass.CreateWorldTextPopup("No Puede Aweonao", mousePosition);
+            }
+        }
+        
+    }
+
+    public Vector3 PlayerPositionWorld()
+    {
+        Vector3 vec = playerSpawner.transform.position;
+        return vec;
+    }
+    //////////////
+    public GameObject vacioSpawner;
+    [SerializeField] public Transform espacioEmpty;
+    public void SetVacio()
+    {
+        Debug.Log('f');
+        Vector3 position = PositionWorld();
+
+        grid.GetXY(position, out int x, out int y);
 
         GridObject gridObject = grid.GetGridObject(x, y);
         if (gridObject.CanBuild())
         {
-            Transform builtTransform = Instantiate(platTranform, grid.GetWorldPosition(x * 1, y * 1), Quaternion.identity);
+            Transform builtTransform = Instantiate(espacioEmpty, grid.GetWorldPosition(x * 1, y * 1), Quaternion.identity);
             gridObject.SetTransform(builtTransform);
-        }
-        else
-        {
-            UtilsClass.CreateWorldTextPopup("No Puede Aweonao", mousePosition);
+
         }
     }
-   
-    public Vector3 PlayerPositionWorld()
+
+    public Vector3 PositionWorld()
     {
-        Vector3 vec = player.transform.position;
+        Vector3 vec = vacioSpawner.transform.position;
         return vec;
     }
 }
