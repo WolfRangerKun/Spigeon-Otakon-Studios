@@ -15,6 +15,10 @@ public class ChangeScene1 : MonoBehaviour
     {
         SceneManager.LoadScene(NumeroDeEscena);
     }
+    public void MainMenu(int NumeroDeEscena)
+    {
+        SceneManager.LoadScene(NumeroDeEscena);
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
