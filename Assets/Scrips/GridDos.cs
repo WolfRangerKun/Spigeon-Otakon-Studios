@@ -37,7 +37,7 @@ public class Grid<TGridObject>
             }
         }
 
-        bool showDebug = false;
+        bool showDebug = true;
         if (showDebug)
         {
             TextMesh[,] debugTextArray = new TextMesh[width, height];
@@ -54,9 +54,9 @@ public class Grid<TGridObject>
             Debug.DrawLine(GetWorldPosition(0, height), GetWorldPosition(width, height), Color.white, 100f);
             Debug.DrawLine(GetWorldPosition(width, 0), GetWorldPosition(width, height), Color.white, 100f);
 
-            OnGridObjectChanged += (object sender, OnGridObjectChangedEventArgs eventArgs) => {
-                debugTextArray[eventArgs.x, eventArgs.y].text = gridArray[eventArgs.x, eventArgs.y]?.ToString();
-            };
+            //OnGridObjectChanged += (object sender, OnGridObjectChangedEventArgs eventArgs) => {
+            //    debugTextArray[eventArgs.x, eventArgs.y].text = gridArray[eventArgs.x, eventArgs.y]?.ToString();
+            //};
         }
     }
 

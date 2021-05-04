@@ -19,8 +19,8 @@ public class GridBuildingSystem2D : MonoBehaviour
     private void Awake()
     {
 
-        int gridWidth = 20;
-        int gridHeight = 20;
+        int gridWidth = 40;
+        int gridHeight = 40;
         float cellSize = 5f;
         grid = new Grid<GridObject>(gridWidth, gridHeight, cellSize, new Vector3(0, 0, 0), (Grid<GridObject> g, int x, int y) => new GridObject(g, x, y));
 
