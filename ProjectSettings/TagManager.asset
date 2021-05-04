@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Walls
   - CheckGround
+  - EspacioEscenario
   layers:
   - Default
   - TransparentFX
