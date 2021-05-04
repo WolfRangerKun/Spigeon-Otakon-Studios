@@ -10,9 +10,8 @@ public class GridBuildingSystem2D : MonoBehaviour
     private GameManager gameManager;
     //Pausa
 
-
     [SerializeField] private Transform platTranform;
-
+    
 
     private Grid<GridObject> grid;
 
@@ -23,6 +22,7 @@ public class GridBuildingSystem2D : MonoBehaviour
         int gridHeight = 40;
         float cellSize = 5f;
         grid = new Grid<GridObject>(gridWidth, gridHeight, cellSize, new Vector3(0, 0, 0), (Grid<GridObject> g, int x, int y) => new GridObject(g, x, y));
+        vaciosSpawners = GameObject.FindGameObjectsWithTag("EspacioEscenario");
 
     }
     private void Start()
@@ -99,27 +99,38 @@ public class GridBuildingSystem2D : MonoBehaviour
         return vec;
     }
     //////////////
+    /////Lista Vacio
+    public GameObject[] vaciosSpawners;
+    //Lista Vacio
+
     public GameObject vacioSpawner;
     [SerializeField] public Transform espacioEmpty;
     public void SetVacio()
     {
-        Debug.Log('f');
-        Vector3 position = PositionWorld();
+        foreach (GameObject vacio in vaciosSpawners)
+        {           
+            Debug.Log('f');
+            Vector3 position = PositionWorld(vacio);
 
-        grid.GetXY(position, out int x, out int y);
+            grid.GetXY(position, out int x, out int y);
 
-        GridObject gridObject = grid.GetGridObject(x, y);
-        if (gridObject.CanBuild())
-        {
-            Transform builtTransform = Instantiate(espacioEmpty, grid.GetWorldPosition(x * 1, y * 1), Quaternion.identity);
-            gridObject.SetTransform(builtTransform);
-
-        }
+            GridObject gridObject = grid.GetGridObject(x, y);
+            if (gridObject.CanBuild())
+            {
+                Transform builtTransform = Instantiate(espacioEmpty, grid.GetWorldPosition(x * 1, y * 1), Quaternion.identity);
+                gridObject.SetTransform(builtTransform);
+            }
+        }        
     }
 
-    public Vector3 PositionWorld()
+    //public Vector3 PositionWorld()
+    //{
+    //    Vector3 vec = vacioSpawner.transform.position;
+    //    return vec;
+    //}
+    public Vector3 PositionWorld(GameObject vaciO)
     {
-        Vector3 vec = vacioSpawner.transform.position;
+        Vector3 vec = vaciO.transform.position;
         return vec;
     }
 }
