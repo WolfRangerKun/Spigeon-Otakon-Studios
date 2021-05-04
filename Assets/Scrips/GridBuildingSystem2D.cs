@@ -7,6 +7,7 @@ using CodeMonkey.Utils;
 public class GridBuildingSystem2D : MonoBehaviour
 {
     [SerializeField] private Transform platTranform;
+    public Transform spawnXd;
 
     private Grid<GridObject> grid;
 
@@ -58,33 +59,11 @@ public class GridBuildingSystem2D : MonoBehaviour
     }
 
     public GameObject player;
-    //private void Update()
-    //{
-    //    if (Input.GetMouseButtonDown(0))
-    //    {
-    //        Vector3 mousePosition = /*UtilsClass.GetMouseWorldPosition()*/ PlayerPositionWorld();
-
-    //        grid.GetXY(mousePosition, out int x, out int y);
-
-    //        GridObject gridObject = grid.GetGridObject(x, y);
-    //        if (gridObject.CanBuild())
-    //        {
-    //            Transform builtTransform = Instantiate(platTranform, grid.GetWorldPosition(x * 1, y *1), Quaternion.identity);
-    //            gridObject.SetTransform(builtTransform);
-    //        }
-    //        else
-    //        {
-    //            UtilsClass.CreateWorldTextPopup("No Puede Poner Plataforma", mousePosition);
-    //        }
-            
-    //    }
-    //}
 
 
     public void SetPlatformInSpace()
     {
         Vector3 mousePosition = PlayerPositionWorld();
-
         grid.GetXY(mousePosition, out int x, out int y);
 
         GridObject gridObject = grid.GetGridObject(x, y);
@@ -95,7 +74,7 @@ public class GridBuildingSystem2D : MonoBehaviour
         }
         else
         {
-            UtilsClass.CreateWorldTextPopup("No Puede Aweonao", mousePosition);
+            UtilsClass.CreateWorldTextPopup("No Puede Poner Plataforma", mousePosition);
         }
     }
    
