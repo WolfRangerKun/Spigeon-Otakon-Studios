@@ -88,12 +88,13 @@ public class GridBuildingSystem2D : MonoBehaviour
                 {
                     Transform builtTransform = Instantiate(platTranform, grid.GetWorldPosition(x * 1, y * 1), Quaternion.identity);
                     gridObject.SetTransform(builtTransform);
+                    limitPlatforms--;
                 }
                 else
                 {
                     UtilsClass.CreateWorldTextPopup("No Puede Aweonao", mousePosition);
                 }
-                limitPlatforms--;
+                
             }
             
         }
