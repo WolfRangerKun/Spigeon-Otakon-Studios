@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class MaterialPlatforms : MonoBehaviour
 {
+    public GridBuildingSystem2D grid;
+    private void Start()
+    {
+        grid = FindObjectOfType<GridBuildingSystem2D>();
+    }
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            PlayerControllerGabo player = other.GetComponent<PlayerControllerGabo>();
-
-            player.materialPlatforms += 40;
-
+            grid.limitPlatforms++;
             Destroy(gameObject);
         }
     }
