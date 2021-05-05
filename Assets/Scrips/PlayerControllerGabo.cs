@@ -28,6 +28,16 @@ public class PlayerControllerGabo : MonoBehaviour
             dir.Normalize();
         }
 
+        //if(Mathf.Abs(Input.acceleration.x) > 0.1f)
+        //{
+        //    gameObject.GetComponent<SpriteRenderer>().flipX = true;
+        //}
+        //else if(Mathf.Abs(Input.acceleration.x) < 0.1f)
+        //{
+        //    gameObject.GetComponent<SpriteRenderer>().flipX = false;
+
+        //}
+
         dir *= Time.deltaTime;
         transform.Translate(dir * speed);
     }
