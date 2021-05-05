@@ -164,7 +164,7 @@ public class ButtomManager : MonoBehaviour
                 theImage.sprite = ammo[1];
                 break;
             case MATERIAL_BALAS.DOSBALAS:
-                theImage.sprite = ammo[1];
+                theImage.sprite = ammo[2];
                 break;
             case MATERIAL_BALAS.TRESBALAS:
                 theImage.sprite = ammo[3];
