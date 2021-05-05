@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 164e96f4c550e854faf7c95e136f5fd0
+guid: d6b58b88a799d914d933d143bd780ef8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 7020783737619557530
-    second: HUD Elements 4_0
+      213: 5076137549164635222
+    second: Player Concept_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -36,7 +36,7 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: -1
-    aniso: 1
+    aniso: -1
     mipBias: -100
     wrapU: 1
     wrapV: 1
@@ -130,13 +130,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: HUD Elements 4_0
+      name: Player Concept_0
       rect:
         serializedVersion: 2
-        x: 144
-        y: 80
-        width: 752
-        height: 480
+        x: 192
+        y: 16
+        width: 1184
+        height: 1296
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -144,8 +144,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a9c27a59c95de6160800000000000000
-      internalID: 7020783737619557530
+      spriteID: 654eaf8d430127640800000000000000
+      internalID: 5076137549164635222
       vertices: []
       indices: 
       edges: []
