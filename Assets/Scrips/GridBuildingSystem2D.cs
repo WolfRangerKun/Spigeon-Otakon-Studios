@@ -15,11 +15,13 @@ public class GridBuildingSystem2D : MonoBehaviour
 
     private Grid<GridObject> grid;
 
+    public int limitPlatforms = 4;
+
     private void Awake()
     {
 
         int gridWidth = 40;
-        int gridHeight = 40;
+        int gridHeight = 60;
         float cellSize = 5f;
         grid = new Grid<GridObject>(gridWidth, gridHeight, cellSize, new Vector3(0, 0, 0), (Grid<GridObject> g, int x, int y) => new GridObject(g, x, y));
         vaciosSpawners = GameObject.FindGameObjectsWithTag("EspacioEscenario");
@@ -75,20 +77,25 @@ public class GridBuildingSystem2D : MonoBehaviour
     {
         if (gameManager.IsGameRunning())
         {
-            Vector3 mousePosition = PlayerPositionWorld();
-
-            grid.GetXY(mousePosition, out int x, out int y);
-
-            GridObject gridObject = grid.GetGridObject(x, y);
-            if (gridObject.CanBuild())
+            if(limitPlatforms > 0)
             {
-                Transform builtTransform = Instantiate(platTranform, grid.GetWorldPosition(x * 1, y * 1), Quaternion.identity);
-                gridObject.SetTransform(builtTransform);
+                Vector3 mousePosition = PlayerPositionWorld();
+
+                grid.GetXY(mousePosition, out int x, out int y);
+
+                GridObject gridObject = grid.GetGridObject(x, y);
+                if (gridObject.CanBuild())
+                {
+                    Transform builtTransform = Instantiate(platTranform, grid.GetWorldPosition(x * 1, y * 1), Quaternion.identity);
+                    gridObject.SetTransform(builtTransform);
+                }
+                else
+                {
+                    UtilsClass.CreateWorldTextPopup("No Puede Aweonao", mousePosition);
+                }
+                limitPlatforms--;
             }
-            else
-            {
-                UtilsClass.CreateWorldTextPopup("No Puede Aweonao", mousePosition);
-            }
+            
         }
         
     }
