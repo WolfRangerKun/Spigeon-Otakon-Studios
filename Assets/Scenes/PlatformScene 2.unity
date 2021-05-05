@@ -2528,7 +2528,7 @@ MonoBehaviour:
   speed: 10
   spawn: {fileID: 1298885949}
   platform: {fileID: 3652333806015318747, guid: 9c8ba4f9a78ec9941ab2ee1e5df67a44, type: 3}
-  jumpStreng: 10
+  jumpStreng: 18
   groundCheck: {fileID: 552506590}
   distanceFromTheFloor: 0.1
   materialPlatforms: 4
@@ -3263,6 +3263,7 @@ GameObject:
   - component: {fileID: 514459760}
   - component: {fileID: 514459759}
   - component: {fileID: 514459761}
+  - component: {fileID: 514459762}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -3393,6 +3394,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameRunning: 1
+--- !u!114 &514459762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 514459758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aee9ca94758354a4aafc19186c801492, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  theSprite: {fileID: 0}
+  estados: []
+  materialClase: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -3481,7 +3497,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 19.47
+  orthographic size: 19.5
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -9347,7 +9363,7 @@ MonoBehaviour:
   m_Follow: {fileID: 401382294}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 19.47
+    OrthographicSize: 19.5
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
