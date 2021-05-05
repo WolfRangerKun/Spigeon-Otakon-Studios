@@ -8,6 +8,7 @@ public class Health : MonoBehaviour
     public int life = 5;
     public bool enemy;
     public bool player;
+    public bool nidoDeMonstruos;
     public GameObject materiasPlataforms;
     public void TakeDamage(int damage)
     {
@@ -18,7 +19,6 @@ public class Health : MonoBehaviour
     {
         if (life <= 0)
         {
-            Destroy(gameObject);
 
             if (enemy)
             {
@@ -29,6 +29,13 @@ public class Health : MonoBehaviour
             {
                 SceneManager.LoadScene("PlatformScene");
             }
+
+            if (nidoDeMonstruos)
+            {
+                NidoDeMonstruos.nidoDeMonstruosIsDead++;
+            }
+
+            Destroy(gameObject);
 
         }
     }

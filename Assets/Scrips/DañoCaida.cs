@@ -39,7 +39,7 @@ public class DañoCaida : MonoBehaviour
         else if (isInGround)
         {
             isFalling = false;
-            if(timeToDie >= 1f)
+            if(timeToDie >= 2f)
             {
                 health.life -= DañoAlCaer;
                 timeToDie = 0f;
