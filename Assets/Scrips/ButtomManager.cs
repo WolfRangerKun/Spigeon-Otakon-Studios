@@ -42,10 +42,9 @@ public class ButtomManager : MonoBehaviour
                 break;
         }
     }
-
-    private void FixedUpdate()
+    public void PlatformImageButtom()
     {
-        if(grid.limitPlatforms == 0)
+        if (grid.limitPlatforms == 0)
         {
             ChangeButtomImage(MATERIAL_CLASE.CEROMATERIAL);
         }
@@ -68,6 +67,124 @@ public class ButtomManager : MonoBehaviour
         if (grid.limitPlatforms == 4)
         {
             ChangeButtomImage(MATERIAL_CLASE.CUATROSMATERIAL);
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        PlatformImageButtom();
+        AmmoImageChange();
+    }
+
+
+    public void AmmoImageChange()
+    {
+        if (shoot.ammo == 0)
+        {
+            ChangeAmmoImage(MATERIAL_BALAS.CEROBALAS);
+        }
+
+        if (shoot.ammo == 1)
+        {
+            ChangeAmmoImage(MATERIAL_BALAS.UNABALAS);
+
+        }
+
+        if (shoot.ammo == 2)
+        {
+            ChangeAmmoImage(MATERIAL_BALAS.DOSBALAS);
+
+        }
+
+        if (shoot.ammo == 3)
+        {
+            ChangeAmmoImage(MATERIAL_BALAS.TRESBALAS);
+
+        }
+
+        if (shoot.ammo == 4)
+        {
+            ChangeAmmoImage(MATERIAL_BALAS.CUATROBALAS);
+
+        }
+
+        if (shoot.ammo == 5)
+        {
+            ChangeAmmoImage(MATERIAL_BALAS.CINCOBALAS);
+
+        }
+
+        if (shoot.ammo == 6)
+        {
+            ChangeAmmoImage(MATERIAL_BALAS.SEISBALAS);
+
+        }
+
+        if (shoot.ammo == 7)
+        {
+            ChangeAmmoImage(MATERIAL_BALAS.SIETEBALAS);
+
+        }
+
+        if (shoot.ammo == 8)
+        {
+            ChangeAmmoImage(MATERIAL_BALAS.OCHOBALAS);
+
+        }
+    }
+
+    public Image theImage;
+    public List<Sprite> ammo;
+
+    public Shoot2 shoot;
+    public enum MATERIAL_BALAS
+    {
+        CEROBALAS,
+        UNABALAS,
+        DOSBALAS,
+        TRESBALAS,
+        CUATROBALAS,
+        CINCOBALAS,
+        SEISBALAS,
+        SIETEBALAS,
+        OCHOBALAS,
+
+    }
+    public MATERIAL_BALAS materialBalas;
+
+    public void ChangeAmmoImage(MATERIAL_BALAS nuevaAmmo)
+    {
+        materialBalas = nuevaAmmo;
+        switch (nuevaAmmo)
+        {
+            case MATERIAL_BALAS.CEROBALAS:
+                theImage.sprite = ammo[0];
+                break;
+            case MATERIAL_BALAS.UNABALAS:
+                theImage.sprite = ammo[1];
+                break;
+            case MATERIAL_BALAS.DOSBALAS:
+                theImage.sprite = ammo[1];
+                break;
+            case MATERIAL_BALAS.TRESBALAS:
+                theImage.sprite = ammo[3];
+                break;
+            case MATERIAL_BALAS.CUATROBALAS:
+                theImage.sprite = ammo[4];
+                break;
+            case MATERIAL_BALAS.CINCOBALAS:
+                theImage.sprite = ammo[5];
+                break;
+            case MATERIAL_BALAS.SEISBALAS:
+                theImage.sprite = ammo[6];
+                break;
+            case MATERIAL_BALAS.SIETEBALAS:
+                theImage.sprite = ammo[7];
+                break;
+            case MATERIAL_BALAS.OCHOBALAS:
+                theImage.sprite = ammo[8];
+                break;
+
         }
     }
 }
