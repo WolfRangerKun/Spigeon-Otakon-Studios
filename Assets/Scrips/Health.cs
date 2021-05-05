@@ -12,9 +12,9 @@ public class Health : MonoBehaviour
     public void TakeDamage(int damage)
     {
         life -= damage;
-        
     }
-    public void Update()
+
+    private void Update()
     {
         if (life <= 0)
         {
