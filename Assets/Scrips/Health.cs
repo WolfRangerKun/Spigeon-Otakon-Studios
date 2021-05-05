@@ -12,6 +12,10 @@ public class Health : MonoBehaviour
     public void TakeDamage(int damage)
     {
         life -= damage;
+        
+    }
+    public void Update()
+    {
         if (life <= 0)
         {
             Destroy(gameObject);
