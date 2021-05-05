@@ -92,9 +92,8 @@ public class GridBuildingSystem2D : MonoBehaviour
                 }
                 else
                 {
-                    UtilsClass.CreateWorldTextPopup("No Puede Aweonao", mousePosition);
+                    UtilsClass.CreateWorldTextPopup("No Puedes Aqui!", mousePosition);
                 }
-                
             }
             
         }
