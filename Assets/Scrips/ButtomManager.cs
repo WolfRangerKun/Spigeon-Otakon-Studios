@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class ButtomManager : MonoBehaviour
 {
+    //
     public Button theButton;
     public List<Sprite> estado;
     public GridBuildingSystem2D grid;
@@ -69,14 +70,74 @@ public class ButtomManager : MonoBehaviour
             ChangeButtomImage(MATERIAL_CLASE.CUATROSMATERIAL);
         }
     }
-
+    //
     private void FixedUpdate()
     {
         PlatformImageButtom();
         AmmoImageChange();
+        ChangerLIfeContador();
+    }
+    //
+    public Image plumas;
+    public List<Sprite> estadoPlumas;
+    public GameObject player;
+
+    public enum ESTADO_DANO
+    {
+        CEROVIDA,
+        UNAVIDA,
+        DOSVIDAS,
+        TRESVIDAS
+
+    }
+    public ESTADO_DANO estadoDano;
+
+    public void ChangePlumasImage(ESTADO_DANO nuevaPluma)
+    {
+        estadoDano = nuevaPluma;
+        switch (nuevaPluma)
+        {
+            case ESTADO_DANO.CEROVIDA:
+                plumas.sprite = estadoPlumas[0];
+                break;
+            case ESTADO_DANO.UNAVIDA:
+                plumas.sprite = estadoPlumas[1];
+                break;
+            case ESTADO_DANO.DOSVIDAS:
+                plumas.sprite = estadoPlumas[2];
+                break;
+            case ESTADO_DANO.TRESVIDAS:
+                plumas.sprite = estadoPlumas[3];
+                break;
+        }
     }
 
+    public void ChangerLIfeContador()
+    {
+        if(player.GetComponent<Health>().life == 0)
+        {
+            ChangePlumasImage(ESTADO_DANO.CEROVIDA);
+        }
 
+        if (player.GetComponent<Health>().life == 1)
+        {
+            ChangePlumasImage(ESTADO_DANO.UNAVIDA);
+
+        }
+
+        if (player.GetComponent<Health>().life == 2)
+        {
+            ChangePlumasImage(ESTADO_DANO.DOSVIDAS);
+
+        }
+
+        if (player.GetComponent<Health>().life == 3)
+        {
+            ChangePlumasImage(ESTADO_DANO.TRESVIDAS);
+
+        }
+    }
+    //
     public void AmmoImageChange()
     {
         if (shoot.ammo == 0)
