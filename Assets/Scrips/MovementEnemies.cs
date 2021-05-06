@@ -7,13 +7,34 @@ public class MovementEnemies : MonoBehaviour
     public Transform theTransform, ref1, ref2;
     public Transform target;
     public float speed = 3;
+    public bool oneDirection;
+    SpawnVincent spawn;
 
     private void Start()
     {
-        target = ref1;
+        if (!oneDirection)
+        {
+            target = ref1;
+        }
+        if (oneDirection)
+        {
+            Destroy(gameObject, 5);
+        }
     }
 
     private void Update()
+    {
+        if (oneDirection)
+        {
+            OneDirection();
+        }
+        if (!oneDirection)
+        {
+            Movement1or2();
+        }
+    }
+
+    public void Movement1or2()
     {
         if (Vector3.Distance(theTransform.position, target.position) > 0.1f)
 
@@ -32,5 +53,11 @@ public class MovementEnemies : MonoBehaviour
             }
 
         }
+    }
+
+    public void OneDirection()
+    {
+        transform.Translate(Vector2.up * speed * Time.deltaTime);
+        
     }
 }

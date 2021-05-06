@@ -25,14 +25,14 @@ public class SpawnEnemyIsaac : MonoBehaviour
     //    }
     //}
 
-    void Arriba()
-    {
-        float x = Random.Range(-10f, 10f);
-        float y = 20f;
-        Vector3 position = new Vector3(x, y, 0);
-        Quaternion rotation = new Quaternion();
-        Instantiate(enemyPrefabDown, position, rotation);
-    }
+    //void Arriba()
+    //{
+    //    float x = Random.Range(-10f, 10f);
+    //    float y = 20f;
+    //    Vector3 position = new Vector3(x, y, 0);
+    //    Quaternion rotation = new Quaternion();
+    //    Instantiate(enemyPrefabDown, position, rotation);
+    //}
 
     void Abajo()
     {
@@ -44,37 +44,37 @@ public class SpawnEnemyIsaac : MonoBehaviour
     }
 
 
-    void Izq()
-    {
-        float x = -25f;
-        float y = Random.Range(-5f, 5f);
-        Vector3 position = new Vector3(x, y, 0);
-        Quaternion rotation = new Quaternion();
-        Instantiate(enemyPrefabDer, position, rotation);
+    //void Izq()
+    //{
+    //    float x = -25f;
+    //    float y = Random.Range(-5f, 5f);
+    //    Vector3 position = new Vector3(x, y, 0);
+    //    Quaternion rotation = new Quaternion();
+    //    Instantiate(enemyPrefabDer, position, rotation);
 
-    }
+    //}
 
-    void Der()
-    {
-        float x = 25f;
-        float y = Random.Range(-5f, 5f);
-        Vector3 position = new Vector3(x, y, 0);
-        Quaternion rotation = new Quaternion();
-        Instantiate(enemyPrefabIzqu, position, rotation);
-    }
+    //void Der()
+    //{
+    //    float x = 25f;
+    //    float y = Random.Range(-5f, 5f);
+    //    Vector3 position = new Vector3(x, y, 0);
+    //    Quaternion rotation = new Quaternion();
+    //    Instantiate(enemyPrefabIzqu, position, rotation);
+    //}
 
     IEnumerator Timer()
     {
         while (true)
         {
-            Arriba();
+            //Arriba();
             yield return new WaitForSeconds(2);
             Abajo();
-            yield return new WaitForSeconds(1f);
-            Der();
-            yield return new WaitForSeconds(1f);
-            Izq();
-            yield return new WaitForSeconds(2);
+            //yield return new WaitForSeconds(1f);
+            //Der();
+            //yield return new WaitForSeconds(1f);
+            //Izq();
+            //yield return new WaitForSeconds(2);
         }
         //yield break;
     }
