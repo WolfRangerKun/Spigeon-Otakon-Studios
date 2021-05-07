@@ -223,7 +223,7 @@ MonoBehaviour:
   ref1: {fileID: 0}
   ref2: {fileID: 0}
   target: {fileID: 0}
-  speed: 30
+  speed: 20
   oneDirection: 1
 --- !u!114 &2542754113641877392
 MonoBehaviour:

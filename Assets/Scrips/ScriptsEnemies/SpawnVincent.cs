@@ -5,8 +5,7 @@ using UnityEngine;
 public class SpawnVincent : MonoBehaviour
 {
     public GameObject enemiesUp;
-    public Transform ref1, ref2;
-    public float speed = 100f;
+    public Transform ref1, ref2 ,ref3;
 
     // Start is called before the first frame update
     void Start()
@@ -15,22 +14,19 @@ public class SpawnVincent : MonoBehaviour
         StartCoroutine(SpawnTiming());
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     void Spawn()
     {
         Instantiate(enemiesUp, ref1.position, Quaternion.identity);
+        Instantiate(enemiesUp, ref2.position, Quaternion.identity);
+        Instantiate(enemiesUp, ref3.position, Quaternion.identity);
+
     }
 
     IEnumerator SpawnTiming()
     {
         while (true)
         {
-            yield return new WaitForSeconds(4f);
+            yield return new WaitForSeconds(3f);
             Spawn();
         }
         

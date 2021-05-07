@@ -18,7 +18,7 @@ public class MovementEnemies : MonoBehaviour
         }
         if (oneDirection)
         {
-            Destroy(gameObject, 5);
+            Destroy(gameObject, 7);
         }
     }
 
