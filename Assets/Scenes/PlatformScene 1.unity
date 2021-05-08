@@ -915,7 +915,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 514459764}
         m_TargetAssemblyTypeName: ChangeScene1, Assembly-CSharp
         m_MethodName: MainMenu
         m_Mode: 3
@@ -3177,7 +3177,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aee9ca94758354a4aafc19186c801492, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  theButton: {fileID: 2068422186}
+  theButton: {fileID: 993939819}
   estado:
   - {fileID: -6854210390667268845, guid: a0693e2c3883ad141b1649f98194b062, type: 3}
   - {fileID: -6854210390667268845, guid: a0693e2c3883ad141b1649f98194b062, type: 3}
@@ -3188,23 +3188,23 @@ MonoBehaviour:
   materialClase: 4
   plumas: {fileID: 1767961782}
   estadoPlumas:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: b065bfd76bbb67c47a6c534065f814f3, type: 3}
+  - {fileID: 21300000, guid: ea851f36055c2014987aff8ec020becd, type: 3}
+  - {fileID: 21300000, guid: 3b01a467e22d99d40b104573de5f569c, type: 3}
+  - {fileID: 21300000, guid: 208cba686e3672940a6ef8d06ab38d70, type: 3}
   player: {fileID: 1307049503}
   estadoDano: 0
   theImage: {fileID: 171944903}
   ammo:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 21300000, guid: 57e7484333dfff144980f0f5ffc250d4, type: 3}
+  - {fileID: 21300000, guid: 38eaec880c9c9464e93f387cb958b860, type: 3}
+  - {fileID: 21300000, guid: aaa98f0a0732d00489a9c354aebadde0, type: 3}
+  - {fileID: 21300000, guid: 2c599fdd2ec9f5d47ac6a004838c3e86, type: 3}
+  - {fileID: 21300000, guid: 0d22b9f7eeb44d94bb7f124c2b25f187, type: 3}
+  - {fileID: 21300000, guid: d7f2614a35cb8914f94d5fb6264965e3, type: 3}
+  - {fileID: 21300000, guid: 4db5505864ce59744855b39a60b11d2c, type: 3}
+  - {fileID: 21300000, guid: 83b81557564531b42b6040cd2065fc18, type: 3}
+  - {fileID: 21300000, guid: 65e6bbf13db40d0498182473ae4df4fd, type: 3}
   shoot: {fileID: 1307049506}
   materialBalas: 0
 --- !u!114 &514459763
@@ -3393,7 +3393,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 145.22, y: 114.5, z: -10}
+  m_LocalPosition: {x: 144.3, y: 115.4, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -4114,6 +4114,17 @@ Transform:
   m_Father: {fileID: 1167736866}
   m_RootOrder: 48
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &614629794 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8170153791668043265, guid: 0d230cc8be529a542a08cb878ab14b18, type: 3}
+  m_PrefabInstance: {fileID: 21042617}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a47f546fc70ec8428172694e78e4288, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &615420467
 GameObject:
   m_ObjectHideFlags: 0
@@ -5578,17 +5589,6 @@ Transform:
   m_Father: {fileID: 1167736866}
   m_RootOrder: 68
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &748461249 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8170153791668043265, guid: 0d230cc8be529a542a08cb878ab14b18, type: 3}
-  m_PrefabInstance: {fileID: 2031488175}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a47f546fc70ec8428172694e78e4288, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &763165629
 GameObject:
   m_ObjectHideFlags: 0
@@ -6560,7 +6560,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 885403497}
         m_TargetAssemblyTypeName: GridBuildingSystem2D, Assembly-CSharp
         m_MethodName: SetPlatformInSpace
         m_Mode: 1
@@ -7385,14 +7385,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 514459764}
         m_TargetAssemblyTypeName: ChangeScene1, Assembly-CSharp
         m_MethodName: CargarNivel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -8332,7 +8332,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1307049507}
   twistPoint: {fileID: 170827761}
-  joystick: {fileID: 748461249}
+  joystick: {fileID: 614629794}
   returnTime: 0.8
   firePoint: {fileID: 170827761}
   bulletPrefab: {fileID: -5994305944300957018, guid: 824cea94342a516428a9bf368be9005d, type: 3}
@@ -8371,7 +8371,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d519fb913232754f898e0c06bb5cc27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 10
+  life: 3
   enemy: 0
   player: 1
   nidoDeMonstruos: 0
@@ -8456,7 +8456,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1307049503}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 145.22, y: 114.5, z: 0}
+  m_LocalPosition: {x: 144.3, y: 115.4, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children:
   - {fileID: 561904574}
@@ -12790,7 +12790,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1967139108}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 145.22, y: 114.5, z: -10}
+  m_LocalPosition: {x: 144.3, y: 115.4, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1419968274}
