@@ -934,7 +934,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 514459764}
         m_TargetAssemblyTypeName: ChangeScene1, Assembly-CSharp
         m_MethodName: MainMenu
         m_Mode: 3
@@ -2854,14 +2854,14 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 514459764}
         m_TargetAssemblyTypeName: ChangeScene1, Assembly-CSharp
         m_MethodName: CargarNivel
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 2
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -10042,17 +10042,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8170153791668043268, guid: 0d230cc8be529a542a08cb878ab14b18, type: 3}
   m_PrefabInstance: {fileID: 413980456}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &413980458 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 8170153791668043265, guid: 0d230cc8be529a542a08cb878ab14b18, type: 3}
-  m_PrefabInstance: {fileID: 413980456}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7a47f546fc70ec8428172694e78e4288, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &415234218
 GameObject:
   m_ObjectHideFlags: 0
@@ -11829,8 +11818,12 @@ MonoBehaviour:
   - {fileID: 7020783737619557530, guid: 164e96f4c550e854faf7c95e136f5fd0, type: 3}
   grid: {fileID: 885403497}
   materialClase: 4
-  plumas: {fileID: 0}
-  estadoPlumas: []
+  plumas: {fileID: 1384871693}
+  estadoPlumas:
+  - {fileID: 21300000, guid: b065bfd76bbb67c47a6c534065f814f3, type: 3}
+  - {fileID: 21300000, guid: ea851f36055c2014987aff8ec020becd, type: 3}
+  - {fileID: 21300000, guid: 3b01a467e22d99d40b104573de5f569c, type: 3}
+  - {fileID: 21300000, guid: 208cba686e3672940a6ef8d06ab38d70, type: 3}
   player: {fileID: 1307049503}
   estadoDano: 0
   theImage: {fileID: 237390412}
@@ -11858,9 +11851,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ad6fec6767026d458c60061be1d0e0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destruisteElNido: {fileID: 0}
-  boton1: {fileID: 0}
-  boton2: {fileID: 0}
+  destruisteElNido: {fileID: 454468782}
+  boton1: {fileID: 122901703}
+  boton2: {fileID: 24203822}
 --- !u!114 &514459764
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11986,7 +11979,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 136.67, y: 8.6, z: -10}
+  m_LocalPosition: {x: 132.4, y: 6.9, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -21740,6 +21733,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &997223903 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8170153791668043265, guid: 0d230cc8be529a542a08cb878ab14b18, type: 3}
+  m_PrefabInstance: {fileID: 1735686321}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a47f546fc70ec8428172694e78e4288, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1004645688
 GameObject:
   m_ObjectHideFlags: 0
@@ -28021,7 +28025,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1307049507}
   twistPoint: {fileID: 170827761}
-  joystick: {fileID: 413980458}
+  joystick: {fileID: 997223903}
   returnTime: 0.8
   firePoint: {fileID: 170827761}
   bulletPrefab: {fileID: -5994305944300957018, guid: 824cea94342a516428a9bf368be9005d, type: 3}
@@ -28060,7 +28064,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2d519fb913232754f898e0c06bb5cc27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  life: 10
+  life: 3
   enemy: 0
   player: 1
   nidoDeMonstruos: 0
@@ -28145,7 +28149,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1307049503}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 136.67, y: 8.6, z: 0}
+  m_LocalPosition: {x: 132.4, y: 6.9, z: 0}
   m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_Children:
   - {fileID: 561904574}
@@ -41534,7 +41538,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1967139108}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 136.67, y: 8.6, z: -10}
+  m_LocalPosition: {x: 132.4, y: 6.9, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1419968274}

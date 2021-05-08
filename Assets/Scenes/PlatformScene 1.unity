@@ -3179,20 +3179,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   theButton: {fileID: 2068422186}
   estado:
-  - {fileID: 3364398194546587267, guid: c5da6507f9b95914682cf05455a72cfc, type: 3}
+  - {fileID: -6854210390667268845, guid: a0693e2c3883ad141b1649f98194b062, type: 3}
   - {fileID: -6854210390667268845, guid: a0693e2c3883ad141b1649f98194b062, type: 3}
   - {fileID: 3450655250600975947, guid: 4005eddb0e846b446a896b8d1c047813, type: 3}
   - {fileID: 4423646348509734787, guid: 43ae66fb8d3b15541a4d74a4145f6e7f, type: 3}
   - {fileID: 7020783737619557530, guid: 164e96f4c550e854faf7c95e136f5fd0, type: 3}
   grid: {fileID: 885403497}
   materialClase: 4
-  plumas: {fileID: 0}
-  estadoPlumas: []
-  player: {fileID: 0}
+  plumas: {fileID: 1767961782}
+  estadoPlumas:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  player: {fileID: 1307049503}
   estadoDano: 0
-  theImage: {fileID: 0}
-  ammo: []
-  shoot: {fileID: 0}
+  theImage: {fileID: 171944903}
+  ammo:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  shoot: {fileID: 1307049506}
   materialBalas: 0
 --- !u!114 &514459763
 MonoBehaviour:
@@ -3206,9 +3219,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7ad6fec6767026d458c60061be1d0e0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destruisteElNido: {fileID: 1698617478}
-  boton1: {fileID: 661253229}
-  boton2: {fileID: 247024362}
+  destruisteElNido: {fileID: 1693278891}
+  boton1: {fileID: 1111841140}
+  boton2: {fileID: 123936386}
 --- !u!114 &514459764
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9983,7 +9996,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 514459761}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: ChangedGameRunningState
         m_Mode: 1
