@@ -27,7 +27,7 @@ public class Health : MonoBehaviour
 
             if (player)
             {
-                SceneManager.LoadScene("PlatformScene");
+                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
             }
 
             if (nidoDeMonstruos)

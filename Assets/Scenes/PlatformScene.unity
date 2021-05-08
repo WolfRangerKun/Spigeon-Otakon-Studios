@@ -11809,7 +11809,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aee9ca94758354a4aafc19186c801492, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  theButton: {fileID: 1374300622}
+  theButton: {fileID: 1089977390}
   estado:
   - {fileID: 3364398194546587267, guid: c5da6507f9b95914682cf05455a72cfc, type: 3}
   - {fileID: -6854210390667268845, guid: a0693e2c3883ad141b1649f98194b062, type: 3}
@@ -23606,7 +23606,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 885403497}
         m_TargetAssemblyTypeName: GridBuildingSystem2D, Assembly-CSharp
         m_MethodName: SetPlatformInSpace
         m_Mode: 1
