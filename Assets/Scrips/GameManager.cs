@@ -6,8 +6,13 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static float puntaje;
-    
+    public GameObject pause;
 
+    private void Start()
+    {
+        gameRunning = true;
+        Time.timeScale = 1f;
+    }
     private void Update()
     {
         if (puntaje >= 12)
@@ -32,7 +37,9 @@ public class GameManager : MonoBehaviour
             foreach (AudioSource a in audios)
             {
                 a.Play();
+                pause.SetActive(false);
             }
+            
         }
         else
         {
@@ -42,7 +49,9 @@ public class GameManager : MonoBehaviour
             foreach (AudioSource a in audios)
             {
                 a.Pause();
+                pause.SetActive(true);
             }
+            
         }
 
     }
