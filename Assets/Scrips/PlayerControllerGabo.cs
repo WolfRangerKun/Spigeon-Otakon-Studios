@@ -22,21 +22,22 @@ public class PlayerControllerGabo : MonoBehaviour
     {
         Vector3 dir = Vector3.zero;
         //dir.y = (Mathf.Abs(Input.acceleration.y) > 0.1) ? -Input.acceleration.y : 0 ;
-        dir.x = (Mathf.Abs(Input.acceleration.x) > 0.1f) ? Input.acceleration.x : 0;
+        dir.x = (Mathf.Abs(Input.acceleration.x) > 0.1) ? Input.acceleration.x : 0;
         if (dir.sqrMagnitude > 1)
         {
             dir.Normalize();
         }
+       
 
-        //if(Mathf.Abs(Input.acceleration.x) > 0.1f)
-        //{
-        //    gameObject.GetComponent<SpriteRenderer>().flipX = true;
-        //}
-        //else if(Mathf.Abs(Input.acceleration.x) < 0.1f)
-        //{
-        //    gameObject.GetComponent<SpriteRenderer>().flipX = false;
+        if (Input.acceleration.x > 0)
+        {
+            gameObject.GetComponent<SpriteRenderer>().flipX = false;
+        }
+        if (Input.acceleration.x < 0)
+        {
+            gameObject.GetComponent<SpriteRenderer>().flipX = true;
 
-        //}
+        }
 
         dir *= Time.deltaTime;
         transform.Translate(dir * speed);
