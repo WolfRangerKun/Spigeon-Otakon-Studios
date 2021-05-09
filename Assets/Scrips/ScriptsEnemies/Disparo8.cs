@@ -8,6 +8,7 @@ public class Disparo8 : MonoBehaviour
     public Rigidbody2D bulletPrefab;
     public float bulletSpeed = 100f;
     public bool canFire = true;
+    public AudioSource canon;
 
     // Start is called before the first frame update
     void Start()
@@ -45,6 +46,7 @@ public class Disparo8 : MonoBehaviour
         bulletFired7.AddForce(shoot7.up * bulletSpeed);
         var bulletFired8 = Instantiate(bulletPrefab, shoot8.position, shoot8.rotation);
         bulletFired8.AddForce(shoot8.up * bulletSpeed);
+        canon.Play();
     }
 
     IEnumerator TimingShoot()

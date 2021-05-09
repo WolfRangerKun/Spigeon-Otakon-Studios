@@ -13,6 +13,7 @@ public class PlayerControllerGabo : MonoBehaviour
     public float distanceFromTheFloor = .1f;
     Rigidbody2D rb2D;
     public int materialPlatforms = 4;
+    public AudioSource aleteo;
 
     private void Start()
     {
@@ -29,11 +30,11 @@ public class PlayerControllerGabo : MonoBehaviour
         }
        
 
-        if (Input.acceleration.x > 0)
+        if (Input.acceleration.x > 0.1)
         {
             gameObject.GetComponent<SpriteRenderer>().flipX = false;
         }
-        if (Input.acceleration.x < 0)
+        if (Input.acceleration.x < -0.1)
         {
             gameObject.GetComponent<SpriteRenderer>().flipX = true;
 
@@ -64,5 +65,6 @@ public class PlayerControllerGabo : MonoBehaviour
     public void Jump()
     {
         rb2D.velocity = new Vector2(rb2D.velocity.y, jumpStreng);
+        aleteo.Play();
     }
 }

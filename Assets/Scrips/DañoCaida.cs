@@ -14,6 +14,7 @@ public class DañoCaida : MonoBehaviour
     public int DañoAlCaer = 1;
     public Health health;
 
+    public AudioSource sonidoCaida;
     private void Awake()
     {
         isFalling = false;
@@ -43,7 +44,7 @@ public class DañoCaida : MonoBehaviour
             {
                 health.life -= DañoAlCaer;
                 timeToDie = 0f;
-
+                sonidoCaida.Play();
                 
             }
         }

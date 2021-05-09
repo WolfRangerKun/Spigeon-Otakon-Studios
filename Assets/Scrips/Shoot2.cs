@@ -22,6 +22,7 @@ public class Shoot2 : MonoBehaviour
 
     public bool canFire = true;
 
+    public AudioSource recarga;
 
     //Pausa
     public GameManager gameManager;
@@ -123,6 +124,7 @@ public class Shoot2 : MonoBehaviour
         while (ammo < 8)
         {
             yield return new WaitForSeconds(1f);
+            recarga.Play();
             ammo++;
         }
     }
