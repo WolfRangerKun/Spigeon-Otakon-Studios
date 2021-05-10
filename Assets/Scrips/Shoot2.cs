@@ -39,6 +39,16 @@ public class Shoot2 : MonoBehaviour
     {
         if (gameManager.IsGameRunning())
         {
+            if (Input.acceleration.x > 0.1)
+            {
+                twistPoint.transform.eulerAngles = new Vector3(0, 0, 0);
+            }
+            if (Input.acceleration.x < 0.1)
+            {
+                twistPoint.transform.eulerAngles = new Vector3(0, 180, 0);
+
+            }
+
             Aim();
             if (joystick.Vertical != 0 && joystick.Horizontal != 0 && canFire)
             {
