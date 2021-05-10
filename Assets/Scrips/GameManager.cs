@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 {
     public static float puntaje;
     public GameObject pause;
+    public GameObject muerte;
 
     private void Start()
     {
@@ -23,7 +24,7 @@ public class GameManager : MonoBehaviour
     }
 
     [SerializeField]
-    private bool gameRunning;
+    public bool gameRunning;
     public AudioSource clickEntry;
     public AudioSource clickExit;
 

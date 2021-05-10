@@ -10,6 +10,7 @@ public class Health : MonoBehaviour
     public bool player;
     public bool nidoDeMonstruos;
     public GameObject materiasPlataforms;
+    public GameManager game;
     public void TakeDamage(int damage)
     {
         life -= damage;
@@ -27,7 +28,8 @@ public class Health : MonoBehaviour
 
             if (player)
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+                game.gameRunning = false;
+                game.muerte.SetActive(true);
             }
 
             if (nidoDeMonstruos)
