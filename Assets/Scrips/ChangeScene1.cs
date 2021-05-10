@@ -9,7 +9,7 @@ public class ChangeScene1 : MonoBehaviour
     public int NumeroDeEscena;
     public AudioSource click;
 
-    public GameObject pantallaDeCarga;
+    public GameObject fondoPantallaDeCarga;
     public Slider Slider;
     private void Start()
     {
@@ -56,7 +56,7 @@ public class ChangeScene1 : MonoBehaviour
         //
         //SetactiveFalse
         //
-        pantallaDeCarga.SetActive(true);
+        fondoPantallaDeCarga.SetActive(true);
 
         while (!Operation.isDone)
         {
