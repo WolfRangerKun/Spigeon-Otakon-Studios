@@ -24,10 +24,14 @@ public class GameManager : MonoBehaviour
 
     [SerializeField]
     private bool gameRunning;
+    public AudioSource clickEntry;
+    public AudioSource clickExit;
 
     public void ChangedGameRunningState()
     {
         gameRunning = !gameRunning;
+
+        
 
         if (gameRunning)
         {
@@ -38,6 +42,7 @@ public class GameManager : MonoBehaviour
             {
                 a.Play();
                 pause.SetActive(false);
+                clickExit.Play();
             }
             
         }
@@ -50,6 +55,7 @@ public class GameManager : MonoBehaviour
             {
                 a.Pause();
                 pause.SetActive(true);
+                clickEntry.Play();
             }
             
         }

@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class ChangeScene1 : MonoBehaviour
 {
     public int NumeroDeEscena;
-
+    public AudioSource click;
     private void Start()
     {
        
@@ -14,10 +14,12 @@ public class ChangeScene1 : MonoBehaviour
     public void CargarNivel(int NumeroDeEscena)
     {
         SceneManager.LoadScene(NumeroDeEscena);
+        click.Play();
     }
     public void MainMenu(int NumeroDeEscena)
     {
         SceneManager.LoadScene(NumeroDeEscena);
+        click.Play();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
