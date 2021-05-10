@@ -65,6 +65,13 @@ public class PlayerControllerGabo : MonoBehaviour
     public void Jump()
     {
         rb2D.velocity = new Vector2(rb2D.velocity.y, jumpStreng);
+        gameObject.GetComponent<Animator>().SetTrigger("Jump");
+        StartCoroutine(JumpSound());
+    }
+
+    IEnumerator JumpSound()
+    {
+        yield return new WaitForSeconds(.3f);
         aleteo.Play();
     }
 }
