@@ -60,8 +60,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2427960d19a19db45a3fed4cad019a30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shootEnemy: {fileID: 2542754113641877393}
-  enemy: {fileID: 2542754113641877398}
+  shootEnemy: {fileID: 0}
+  enemy: {fileID: 0}
 --- !u!1 &2542754113641877396
 GameObject:
   m_ObjectHideFlags: 0

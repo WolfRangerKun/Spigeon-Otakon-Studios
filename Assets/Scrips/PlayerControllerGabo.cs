@@ -7,7 +7,6 @@ public class PlayerControllerGabo : MonoBehaviour
     [SerializeField]
     public float speed = 10f;
     public Transform spawn;
-    public GameObject platform;
     public float jumpStreng = 5f;
     public Transform groundCheck;
     public float distanceFromTheFloor = .1f;
@@ -57,7 +56,6 @@ public class PlayerControllerGabo : MonoBehaviour
     {
         if(materialPlatforms >= 1)
         {
-            Instantiate(platform, spawn.position, Quaternion.identity);
             materialPlatforms--;
         }
     }
