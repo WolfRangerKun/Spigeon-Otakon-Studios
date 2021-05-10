@@ -116,7 +116,7 @@ public class GridBuildingSystem2D : MonoBehaviour
     {
         foreach (GameObject vacio in vaciosSpawners)
         {           
-            Debug.Log('f');
+            
             Vector3 position = PositionWorld(vacio);
 
             grid.GetXY(position, out int x, out int y);
