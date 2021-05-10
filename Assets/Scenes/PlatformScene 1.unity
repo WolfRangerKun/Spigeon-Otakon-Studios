@@ -3512,6 +3512,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NumeroDeEscena: 0
   click: {fileID: 514459767}
+  pantallaDeCarga: {fileID: 0}
+  Slider: {fileID: 0}
 --- !u!114 &514459765
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9336,8 +9338,8 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 514459764}
         m_TargetAssemblyTypeName: ChangeScene1, Assembly-CSharp
-        m_MethodName: MainMenu
-        m_Mode: 3
+        m_MethodName: ReiniciarEscena
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
