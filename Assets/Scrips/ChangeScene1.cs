@@ -38,6 +38,12 @@ public class ChangeScene1 : MonoBehaviour
             CargarNivel(NumeroDeEscena);
         }
     }
+
+    public void ReiniciarEscena()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
     public void QuitGame()
     {
         Application.Quit();
