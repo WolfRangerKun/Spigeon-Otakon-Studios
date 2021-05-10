@@ -10,6 +10,8 @@ public class Health : MonoBehaviour
     public bool player;
     public bool nidoDeMonstruos;
     public GameObject materiasPlataforms;
+
+    public AudioSource explosion;
     public void TakeDamage(int damage)
     {
         life -= damage;
@@ -33,6 +35,7 @@ public class Health : MonoBehaviour
             if (nidoDeMonstruos)
             {
                 NidoDeMonstruos.nidoDeMonstruosIsDead++;
+                explosion.Play();
             }
 
             Destroy(gameObject);
