@@ -11,6 +11,7 @@ public class Health : MonoBehaviour
     public bool nidoDeMonstruos;
     public GameObject materiasPlataforms;
     public GameManager game;
+    //public AudioSource sonidoMuerte;
     public void TakeDamage(int damage)
     {
         life -= damage;
@@ -29,6 +30,7 @@ public class Health : MonoBehaviour
             if (player)
             {
                 game.gameRunning = false;
+                //sonidoMuerte.Play();
                 game.muerte.SetActive(true);
             }
 
