@@ -11,6 +11,7 @@ public class ChangeScene1 : MonoBehaviour
 
     public GameObject fondoPantallaDeCarga;
     public Slider Slider;
+    public AudioSource musicaNivel;
     private void Start()
     {
        
@@ -56,6 +57,7 @@ public class ChangeScene1 : MonoBehaviour
         //
         //SetactiveFalse
         //
+        musicaNivel.volume = .05f;
         fondoPantallaDeCarga.SetActive(true);
 
         while (!Operation.isDone)
