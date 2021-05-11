@@ -9,8 +9,9 @@ public class ChangeScene1 : MonoBehaviour
     public int NumeroDeEscena;
     public AudioSource click;
 
-    public GameObject pantallaDeCarga;
+    public GameObject fondoPantallaDeCarga;
     public Slider Slider;
+    public AudioSource musicaNivel;
     private void Start()
     {
        
@@ -56,7 +57,8 @@ public class ChangeScene1 : MonoBehaviour
         //
         //SetactiveFalse
         //
-        pantallaDeCarga.SetActive(true);
+        musicaNivel.volume = .05f;
+        fondoPantallaDeCarga.SetActive(true);
 
         while (!Operation.isDone)
         {
