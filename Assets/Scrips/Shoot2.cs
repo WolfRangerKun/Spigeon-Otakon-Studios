@@ -58,9 +58,11 @@ public class Shoot2 : MonoBehaviour
                 if (ammo == 0)
                 {
                     StartCoroutine(Recharge());
+                    canFire = false;
                     if (ammo == 8)
                     {
                         StopCoroutine(Recharge());
+                        canFire = true;
                     }
                 }
             }
@@ -79,7 +81,7 @@ public class Shoot2 : MonoBehaviour
 
     public void Aim()
     {
-        
+       
         Vector3 angle = twistPoint.transform.localEulerAngles;
 
         //float HorizontalAxis = Input.GetAxis("HorizontalRightStick");
