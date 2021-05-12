@@ -11,6 +11,8 @@ public class ShootEnemy : MonoBehaviour
     public Enemy enemy;
     public float returnTime = .8f;
 
+    public AudioSource disparoAgudo;
+
     //public AudioSource sonidoDisparo;
 
     private void Start()
@@ -21,7 +23,9 @@ public class ShootEnemy : MonoBehaviour
     {
         if (listo)
         {
+            
             Aim();
+            disparoAgudo.Play();
             GameObject bulletGO = Instantiate(bullet, twistPoint.position, twistPoint.rotation);
             bulletGO.GetComponent<SpriteRenderer>().color = Color.blue;
             bulletGO.GetComponent<BulletEnemy>().target = "Player";

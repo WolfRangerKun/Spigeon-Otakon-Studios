@@ -93,7 +93,7 @@ Transform:
   m_GameObject: {fileID: 4112138137660652326}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 54.78, y: 25.12, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 0.40242726}
+  m_LocalScale: {x: 1, y: 1.001473, z: 0.6567035}
   m_Children:
   - {fileID: 4112138137538070308}
   - {fileID: 6070643184809829263}
@@ -244,7 +244,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: bef03d62b71281b4cb46afe040b61657, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.1
   m_Pitch: 1
@@ -380,7 +380,7 @@ MonoBehaviour:
   listo: 0
   enemy: {fileID: 4112138137660652324}
   returnTime: 0.8
-  sonidoDisparo: {fileID: 0}
+  disparoAgudo: {fileID: 1117545169944709810}
 --- !u!212 &3856529027062603056
 SpriteRenderer:
   m_ObjectHideFlags: 0
