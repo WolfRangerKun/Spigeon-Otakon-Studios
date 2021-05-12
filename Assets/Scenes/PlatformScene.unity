@@ -4467,7 +4467,7 @@ Transform:
   - {fileID: 339779762}
   - {fileID: 112177570}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &196858468
 GameObject:
@@ -11816,7 +11816,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 126.006836, y: 10.051931, z: -10}
+  m_LocalPosition: {x: 130.418, y: 10.050695, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -16657,7 +16657,7 @@ Transform:
   - {fileID: 1010842007}
   - {fileID: 1434617373}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &735208879
 GameObject:
@@ -25504,6 +25504,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1118891475217264596, guid: b80b969a3f3b8b248890dde7fa0ab274, type: 3}
+      propertyPath: ruido
+      value: 
+      objectReference: {fileID: 1909526428}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b80b969a3f3b8b248890dde7fa0ab274, type: 3}
 --- !u!4 &1164315926 stripped
@@ -26240,7 +26244,7 @@ Transform:
   - {fileID: 161261417}
   - {fileID: 799136918}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1195333315
 GameObject:
@@ -58568,6 +58572,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!82 &1909526428 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 786971023, guid: b80b969a3f3b8b248890dde7fa0ab274, type: 3}
+  m_PrefabInstance: {fileID: 1164315925}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1913770296
 GameObject:
   m_ObjectHideFlags: 0
