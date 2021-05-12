@@ -9,10 +9,13 @@ public class BulletEnemy : MonoBehaviour
     public float speed = 10;
     public string target;
     public float timeToDestroy = 3;
+    Rigidbody2D rb2D;
 
     private void Start()
     {
+        rb2D = GetComponent<Rigidbody2D>();
         Destroy(gameObject, timeToDestroy);
+        rb2D.velocity = transform.right * speed;
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -35,13 +38,13 @@ public class BulletEnemy : MonoBehaviour
         }
 
     }
-    private void Update()
-    {
-        transform.Translate(direction * speed * Time.deltaTime);
+    //private void Update()
+    //{
+    //    transform.Translate(direction * speed * Time.deltaTime);
 
-    }
-    public void DirectionBullet(Vector2 dir)
-    {
-        direction = dir;
-    }
+    //}
+    //public void DirectionBullet(Vector2 dir)
+    //{
+    //    direction = dir;
+    //}
 }
