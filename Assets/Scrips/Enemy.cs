@@ -9,6 +9,7 @@ public class Enemy : MonoBehaviour
     public float speed = 2;
     public Vector2 directionFollow;
     private Rigidbody2D rb;
+    public bool terrestEnemy;
 
     private void Awake()
     {
@@ -27,6 +28,18 @@ public class Enemy : MonoBehaviour
             //transform.Translate(directionFollow * speed * Time.deltaTime);
             rb.velocity = new Vector2(directionFollow.x, directionFollow.y) * speed * Time.fixedDeltaTime;
         }
+        if (terrestEnemy)
+        {
+            if (directionFollow.x > 0)
+            {
+                gameObject.GetComponent<SpriteRenderer>().flipX = false;
+            }
+            if (directionFollow.x < 0)
+            {
+                gameObject.GetComponent<SpriteRenderer>().flipX = true;
+            }
+        }
+        
     }
     public void DirectionToGo()
     {

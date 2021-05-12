@@ -26,8 +26,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2750366531674853833}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.21726, y: -0.6, z: 0}
+  m_LocalScale: {x: 6.9944215, y: 6.9944215, z: 6.9944215}
   m_Children: []
   m_Father: {fileID: 6230944486806394033}
   m_RootOrder: 1
@@ -87,8 +87,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6230944485400811012}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: -0.9, z: 0}
+  m_LocalScale: {x: 7.5571914, y: 7.5571914, z: 7.5571914}
   m_Children: []
   m_Father: {fileID: 6230944486806394033}
   m_RootOrder: 0
@@ -106,9 +106,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0013228314, y: 0}
+  m_Offset: {x: -0.018117609, y: 0}
   serializedVersion: 2
-  m_Radius: 0.6915719
+  m_Radius: 0.8427183
 --- !u!114 &6230944485400811015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 6230944486806394035}
   - component: {fileID: 6230944486806394034}
   - component: {fileID: 6230944486806394046}
+  - component: {fileID: 30182431}
   m_Layer: 0
   m_Name: MoscaKliaTerrestre (1)
   m_TagString: Enemy
@@ -152,7 +153,7 @@ Transform:
   m_GameObject: {fileID: 6230944486806394032}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 98.56, y: 12.41, z: 196.08168}
-  m_LocalScale: {x: 2.9789, y: 2.9789, z: 2.9789}
+  m_LocalScale: {x: 0.42638358, y: 0.415984, z: 0.415984}
   m_Children:
   - {fileID: 6230944485400811013}
   - {fileID: 2511470607696064697}
@@ -199,8 +200,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: db750325989564987a34393247d883b4, type: 3}
-  m_Color: {r: 0.18407424, g: 0.745283, b: 0.08788714, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 3149803ff4ad08848b22e4f4a7db0bd9, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -223,18 +224,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.14448833, y: -0.74973285}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 10.24, y: 10.24}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 9.886278, y: 8.953232}
   m_EdgeRadius: 0
 --- !u!50 &6230944486806394035
 Rigidbody2D:
@@ -273,6 +274,7 @@ MonoBehaviour:
   following: 0
   speed: 400
   directionFollow: {x: 0, y: 0}
+  terrestEnemy: 1
 --- !u!114 &6230944486806394046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -291,3 +293,99 @@ MonoBehaviour:
   nidoDeMonstruos: 0
   materiasPlataforms: {fileID: 3079496634496970693, guid: c6b775e3faf5ddd48bb7d04fbea315de, type: 3}
   game: {fileID: 0}
+--- !u!82 &30182431
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6230944486806394032}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: c6546a87ec8cd8e4d8cc50ea7b624513, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
