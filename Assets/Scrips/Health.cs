@@ -15,6 +15,7 @@ public class Health : MonoBehaviour
     public void TakeDamage(int damage)
     {
         life -= damage;
+        StartCoroutine(VisualDano());
     }
 
     private void Update()
@@ -43,5 +44,12 @@ public class Health : MonoBehaviour
             Destroy(gameObject);
 
         }
+    }
+
+    IEnumerator VisualDano()
+    {
+        gameObject.GetComponent<SpriteRenderer>().color = Color.red;
+        yield return new WaitForSeconds(.1f);
+        gameObject.GetComponent<SpriteRenderer>().color = Color.white;
     }
 }
