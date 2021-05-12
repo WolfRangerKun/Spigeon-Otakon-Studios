@@ -2852,7 +2852,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   theButton: {fileID: 993939819}
   estado:
-  - {fileID: -6854210390667268845, guid: a0693e2c3883ad141b1649f98194b062, type: 3}
+  - {fileID: 3364398194546587267, guid: c5da6507f9b95914682cf05455a72cfc, type: 3}
   - {fileID: -6854210390667268845, guid: a0693e2c3883ad141b1649f98194b062, type: 3}
   - {fileID: 3450655250600975947, guid: 4005eddb0e846b446a896b8d1c047813, type: 3}
   - {fileID: 4423646348509734787, guid: 43ae66fb8d3b15541a4d74a4145f6e7f, type: 3}
@@ -3373,7 +3373,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 72.848045, y: 23.218878, z: -10}
+  m_LocalPosition: {x: 67.1606, y: 23.235062, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -6327,6 +6327,7 @@ MonoBehaviour:
   platTranform: {fileID: 7002773250715911359, guid: 05f60d18f727fe5409e49bf7979e0b0e, type: 3}
   limitPlatforms: 4
   playerSpawner: {fileID: 1716741978}
+  cartelNoPlataforma: {fileID: 4776402082546456958, guid: 42640b8809a26f9459d5a76509f6f6fb, type: 3}
   vaciosSpawners: []
   vacioSpawner: {fileID: 1170470229}
   espacioEmpty: {fileID: 7583151987142291489, guid: c5436d3efff4f7d42adb01d1e388c68f, type: 3}

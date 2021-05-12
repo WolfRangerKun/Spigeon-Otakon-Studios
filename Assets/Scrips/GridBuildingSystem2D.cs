@@ -71,7 +71,7 @@ public class GridBuildingSystem2D : MonoBehaviour
     }
 
     public GameObject playerSpawner;
-
+    public GameObject cartelNoPlataforma;
 
     public void SetPlatformInSpace()
     {
@@ -92,7 +92,8 @@ public class GridBuildingSystem2D : MonoBehaviour
                 }
                 else
                 {
-                    UtilsClass.CreateWorldTextPopup("No Puedes Aqui!", mousePosition);
+                    //UtilsClass.CreateWorldTextPopup("No Puedes Aqui!", mousePosition);
+                    Instantiate(cartelNoPlataforma, mousePosition, Quaternion.identity);
                 }
             }
             

@@ -5,9 +5,11 @@ using UnityEngine;
 public class MaterialPlatforms : MonoBehaviour
 {
     public GridBuildingSystem2D grid;
+    public AudioSource popUpSound;
     private void Start()
     {
         grid = FindObjectOfType<GridBuildingSystem2D>();
+        popUpSound.Play();
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
