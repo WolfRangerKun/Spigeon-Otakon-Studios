@@ -11,7 +11,7 @@ public class MaterialPlatforms : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && grid.limitPlatforms < 4)
         {
             grid.limitPlatforms++;
             Destroy(gameObject);
