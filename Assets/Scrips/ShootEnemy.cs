@@ -11,6 +11,8 @@ public class ShootEnemy : MonoBehaviour
     public Enemy enemy;
     public float returnTime = .8f;
 
+    public AudioSource sonidoDisparo;
+
     private void Start()
     {
         StartCoroutine(ShootingEnemy());
@@ -30,8 +32,9 @@ public class ShootEnemy : MonoBehaviour
         while (true)
         {
             yield return new WaitForSeconds(timeToShoot);
+
             ShootBullet(enemy.directionFollow);
-            
+            sonidoDisparo.Play();
         }
     }
 

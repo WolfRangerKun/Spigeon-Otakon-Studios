@@ -11815,7 +11815,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 129.4, y: 10.05, z: -10}
+  m_LocalPosition: {x: 128.81602, y: 10.050165, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -58677,6 +58677,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1191561662}
     m_Modifications:
+    - target: {fileID: 1117545169944709810, guid: 126ee16b8079d9d4e92b48ebaf22c5f1, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: bef03d62b71281b4cb46afe040b61657, type: 3}
     - target: {fileID: 4112138137660652325, guid: 126ee16b8079d9d4e92b48ebaf22c5f1, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -58745,11 +58749,20 @@ PrefabInstance:
       propertyPath: ref2
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6137096341504126265, guid: 126ee16b8079d9d4e92b48ebaf22c5f1, type: 3}
+      propertyPath: sonidoDisparo
+      value: 
+      objectReference: {fileID: 1933017139}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 126ee16b8079d9d4e92b48ebaf22c5f1, type: 3}
 --- !u!4 &1933017138 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4112138137660652325, guid: 126ee16b8079d9d4e92b48ebaf22c5f1, type: 3}
+  m_PrefabInstance: {fileID: 1933017137}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &1933017139 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 1117545169944709810, guid: 126ee16b8079d9d4e92b48ebaf22c5f1, type: 3}
   m_PrefabInstance: {fileID: 1933017137}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1933565218
