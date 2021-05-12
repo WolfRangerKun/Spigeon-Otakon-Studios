@@ -12,10 +12,20 @@ public class Health : MonoBehaviour
     public GameObject materiasPlataforms;
     public GameManager game;
     public AudioSource explisoin;
+    public AudioSource danoPlayer;
+    public AudioSource danoEnemy;
     public void TakeDamage(int damage)
     {
         life -= damage;
         StartCoroutine(VisualDano());
+        if (player)
+        {
+            danoPlayer.Play();
+        }
+        if (enemy || nidoDeMonstruos)
+        {
+            danoEnemy.Play();
+        }
     }
 
     private void Update()
