@@ -233,6 +233,7 @@ MonoBehaviour:
   nidoDeMonstruos: 0
   materiasPlataforms: {fileID: 3079496634496970693, guid: c6b775e3faf5ddd48bb7d04fbea315de, type: 3}
   game: {fileID: 0}
+  explisoin: {fileID: 0}
 --- !u!82 &1117545169944709810
 AudioSource:
   m_ObjectHideFlags: 0
@@ -379,6 +380,7 @@ MonoBehaviour:
   listo: 0
   enemy: {fileID: 4112138137660652324}
   returnTime: 0.8
+  sonidoDisparo: {fileID: 0}
 --- !u!212 &3856529027062603056
 SpriteRenderer:
   m_ObjectHideFlags: 0

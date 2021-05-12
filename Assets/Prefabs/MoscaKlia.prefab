@@ -135,7 +135,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &1118891473835005378
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -150,7 +150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 0}
   following: 0
-  speed: 200
+  speed: 4000
   directionFollow: {x: 0, y: 0}
   terrestEnemy: 0
 --- !u!114 &1118891473835005382
@@ -171,6 +171,7 @@ MonoBehaviour:
   nidoDeMonstruos: 0
   materiasPlataforms: {fileID: 3079496634496970693, guid: c6b775e3faf5ddd48bb7d04fbea315de, type: 3}
   game: {fileID: 0}
+  explisoin: {fileID: 0}
 --- !u!82 &786971023
 AudioSource:
   m_ObjectHideFlags: 0
