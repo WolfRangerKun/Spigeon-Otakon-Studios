@@ -395,6 +395,7 @@ MonoBehaviour:
   nidoDeMonstruos: 0
   materiasPlataforms: {fileID: 3079496634496970693, guid: c6b775e3faf5ddd48bb7d04fbea315de, type: 3}
   game: {fileID: 0}
+  explisoin: {fileID: 0}
 --- !u!82 &2221828850573950120
 AudioSource:
   m_ObjectHideFlags: 0
