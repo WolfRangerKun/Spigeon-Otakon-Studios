@@ -7,6 +7,7 @@ public class CameraMachine : MonoBehaviour
 {
     public CinemachineVirtualCamera cam;
     public GameObject canvas;
+    public float timeToMove = 0f;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +22,7 @@ public class CameraMachine : MonoBehaviour
 
     IEnumerator timing()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(timeToMove);
         cam.Priority = 12;
         canvas.SetActive(true);
         
