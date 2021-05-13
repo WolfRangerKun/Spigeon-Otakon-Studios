@@ -24,8 +24,8 @@ public class MovementEnemies : MonoBehaviour
     private GameManager gameManager;
     private void Update()
     {
-        if (gameManager.IsGameRunning())
-        {
+        //if (gameManager.IsGameRunning())
+        
             if (oneDirection)
             {
                 OneDirection();
@@ -34,7 +34,7 @@ public class MovementEnemies : MonoBehaviour
             {
                 Movement1or2();
             }
-        }
+        
        
     }
 
