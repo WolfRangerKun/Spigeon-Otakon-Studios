@@ -50,7 +50,7 @@ public class Shoot2 : MonoBehaviour
             }
 
             Aim();
-            if (joystick.Vertical != 0 && joystick.Horizontal != 0 && canFire)
+            if (joystick.Vertical != 0 && joystick.Horizontal != 0 && canFire && ammo > 0)
             {
                 canFire = false;
                 StartCoroutine(TimingShoot()); // consejo de walter (que cuando dejes de disparar , recargars, tipo que se va subiendo 1 por 1 las balas).
@@ -69,10 +69,12 @@ public class Shoot2 : MonoBehaviour
             if (ammo == 0)
             {
                 canFire = false;
+                
             }
             else if (ammo == 8)
             {
                 canFire = true;
+                
             }
             //Shoot();
         }
