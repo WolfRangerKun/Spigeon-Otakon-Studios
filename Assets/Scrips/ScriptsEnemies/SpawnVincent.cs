@@ -7,6 +7,8 @@ public class SpawnVincent : MonoBehaviour
     public GameObject enemiesUp;
     public Transform ref1, ref2 ,ref3;
 
+    public bool vincent;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +20,11 @@ public class SpawnVincent : MonoBehaviour
     {
         Instantiate(enemiesUp, ref1.position, Quaternion.identity);
         Instantiate(enemiesUp, ref2.position, Quaternion.identity);
-        Instantiate(enemiesUp, ref3.position, Quaternion.identity);
+        if (vincent)
+        {
+            Instantiate(enemiesUp, ref3.position, Quaternion.identity);
+
+        }
 
     }
 

@@ -3028,6 +3028,7 @@ MonoBehaviour:
   ref1: {fileID: 437058060}
   ref2: {fileID: 169775323}
   ref3: {fileID: 1040349823}
+  vincent: 1
 --- !u!82 &514459766
 AudioSource:
   m_ObjectHideFlags: 0
