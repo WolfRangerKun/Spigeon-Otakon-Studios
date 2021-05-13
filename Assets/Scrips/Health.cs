@@ -1,7 +1,5 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Health : MonoBehaviour
 {
@@ -27,9 +25,10 @@ public class Health : MonoBehaviour
             danoEnemy.Play();
         }
     }
-
+    private GameManager gameManager;
     private void Update()
     {
+
         if (life <= 0)
         {
 
@@ -54,6 +53,7 @@ public class Health : MonoBehaviour
             Destroy(gameObject);
 
         }
+
     }
 
     IEnumerator VisualDano()

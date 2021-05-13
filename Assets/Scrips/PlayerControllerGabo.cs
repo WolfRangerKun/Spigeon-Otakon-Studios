@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerControllerGabo : MonoBehaviour
@@ -14,6 +13,7 @@ public class PlayerControllerGabo : MonoBehaviour
     public int materialPlatforms = 4;
     public AudioSource aleteo;
 
+    private GameManager gameManager;
     private void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
@@ -27,8 +27,24 @@ public class PlayerControllerGabo : MonoBehaviour
         {
             dir.Normalize();
         }
-       
 
+        //if (Input.acceleration.x > 0.1)
+        //{
+        //    gameObject.GetComponent<SpriteRenderer>().flipX = false;
+        //}
+        //if (Input.acceleration.x < -0.1)
+        //{
+        //    gameObject.GetComponent<SpriteRenderer>().flipX = true;
+
+        //}
+
+        dir *= Time.deltaTime;
+        transform.Translate(dir * speed);
+
+    }
+
+    private void FixedUpdate()
+    {
         if (Input.acceleration.x > 0.1)
         {
             gameObject.GetComponent<SpriteRenderer>().flipX = false;
@@ -38,13 +54,6 @@ public class PlayerControllerGabo : MonoBehaviour
             gameObject.GetComponent<SpriteRenderer>().flipX = true;
 
         }
-
-        dir *= Time.deltaTime;
-        transform.Translate(dir * speed);
-    }
-
-    private void FixedUpdate()
-    {
         if (Detection.isGrounded == true)
         {
 
@@ -54,7 +63,7 @@ public class PlayerControllerGabo : MonoBehaviour
 
     public void SpawnPlatform()
     {
-        if(materialPlatforms >= 1)
+        if (materialPlatforms >= 1)
         {
             materialPlatforms--;
         }

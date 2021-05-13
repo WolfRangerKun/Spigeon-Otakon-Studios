@@ -21,17 +21,21 @@ public class MovementEnemies : MonoBehaviour
             Destroy(gameObject, 7);
         }
     }
-
+    private GameManager gameManager;
     private void Update()
     {
-        if (oneDirection)
+        if (gameManager.IsGameRunning())
         {
-            OneDirection();
+            if (oneDirection)
+            {
+                OneDirection();
+            }
+            if (!oneDirection)
+            {
+                Movement1or2();
+            }
         }
-        if (!oneDirection)
-        {
-            Movement1or2();
-        }
+       
     }
 
     public void Movement1or2()
