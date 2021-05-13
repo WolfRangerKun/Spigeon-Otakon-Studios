@@ -6,7 +6,6 @@ public class SpawnVincent : MonoBehaviour
 {
     public GameObject enemiesUp;
     public Transform ref1, ref2 ,ref3;
-
     public bool vincent;
 
     // Start is called before the first frame update
