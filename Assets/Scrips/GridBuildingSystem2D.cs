@@ -17,6 +17,7 @@ public class GridBuildingSystem2D : MonoBehaviour
 
     public int limitPlatforms = 4;
 
+
     private void Awake()
     {
 
