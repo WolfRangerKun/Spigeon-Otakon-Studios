@@ -81,4 +81,5 @@ public class PlayerControllerGabo : MonoBehaviour
         yield return new WaitForSeconds(.3f);
         aleteo.Play();
     }
+
 }
