@@ -32,8 +32,6 @@ public class GameManager : MonoBehaviour
     {
         gameRunning = !gameRunning;
 
-        
-
         if (gameRunning)
         {
             Time.timeScale = 1f;
